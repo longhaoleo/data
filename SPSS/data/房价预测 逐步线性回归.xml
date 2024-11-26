@@ -1,0 +1,2254 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PMML 
+	 version="4.3"
+	 xmlns="http://www.dmg.org/PMML-4_3"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://www.dmg.org/PMML-4_3 pmml-4-3.xsd">
+	<Header 
+		 copyright="Copyright (c) IBM Corp. 1989, 2017.">
+		<Application  name="IBM SPSS Statistics"  version="27.0.1.0" />
+	</Header>
+	<DataDictionary 
+		 numberOfFields="54">
+		<DataField 
+			 name="SalePrice"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="6" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+		<DataField 
+			 name="房屋分类_5"
+			 displayName="房屋分类=1-1/2 STORY FINISHED ALL AGES"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="区域分类_2"
+			 displayName="区域分类=C (all)"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="区域分类_4"
+			 displayName="区域分类=RH"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="区域分类_5"
+			 displayName="区域分类=0"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="地块配置_2"
+			 displayName="地块配置=CulDSac"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="建筑类型_4"
+			 displayName="建筑类型=Twnhs"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="建筑类型_5"
+			 displayName="建筑类型=TwnhsE"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="房屋风格_4"
+			 displayName="房屋风格=2.5Fin"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="房屋风格_5"
+			 displayName="房屋风格=2.5Unf"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="房屋风格_6"
+			 displayName="房屋风格=2Story"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="房屋风格_7"
+			 displayName="房屋风格=SFoyer"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="屋顶样式_4"
+			 displayName="屋顶样式=Hip"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="屋顶材料_2"
+			 displayName="屋顶材料=CompShg"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="供暖系统_3"
+			 displayName="供暖系统=GasW"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="功能性_2"
+			 displayName="功能性=Maj2"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="销售类型_7"
+			 displayName="销售类型=New"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="销售条件_3"
+			 displayName="销售条件=Alloca"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="销售条件_5"
+			 displayName="销售条件=Normal"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="环境条件_1_3"
+			 displayName="环境条件1=Artery * 环境条件2=PosA"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="环境条件_1_5"
+			 displayName="环境条件1=Feedr * 环境条件2=Norm"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="环境条件_1_12"
+			 displayName="环境条件1=PosN * 环境条件2=PosN"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="环境条件_1_16"
+			 displayName="环境条件1=RRNe * 环境条件2=Norm"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="外墙材料_1_7"
+			 displayName="外墙材料1=BrkFace * 外墙材料2=BrkFace"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="外墙材料_1_8"
+			 displayName="外墙材料1=BrkFace * 外墙材料2=HdBoard"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="外墙材料_1_12"
+			 displayName="外墙材料1=BrkFace * 外墙材料2=Wd Sdng"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="外墙材料_1_15"
+			 displayName="外墙材料1=CemntBd * 外墙材料2=CmentBd"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="外墙材料_1_17"
+			 displayName="外墙材料1=CemntBd * 外墙材料2=Wd Shng"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="外墙材料_1_35"
+			 displayName="外墙材料1=Plywood * 外墙材料2=Plywood"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="外墙材料_1_49"
+			 displayName="外墙材料1=VinylSd * 外墙材料2=VinylSd"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="外墙材料_1_55"
+			 displayName="外墙材料1=Wd Sdng * 外墙材料2=ImStucc"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="地下室装修类型_1_4"
+			 displayName="地下室装修类型1=ALQ * 地下室装修类型2=Rec"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="地下室装修类型_1_12"
+			 displayName="地下室装修类型1=GLQ * 地下室装修类型2=ALQ"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="地下室装修类型_1_16"
+			 displayName="地下室装修类型1=GLQ * 地下室装修类型2=Unf"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="地下室装修类型_1_17"
+			 displayName="地下室装修类型1=Gd * 地下室装修类型2=Unf"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="地下室装修类型_1_27"
+			 displayName="地下室装修类型1=TA * 地下室装修类型2=Unf"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="外部质量_N"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="地下室质量_N"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="地下室采光_N"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="中央空调_N"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="厨房质量_N"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="车库装修情况_N"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="8" />
+			<Extension  extender="spss.com"  name="decimals"  value="2" />
+		</DataField>
+		<DataField 
+			 name="占地面积"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="6" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+		<DataField 
+			 name="总体质量"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="2" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+		<DataField 
+			 name="总体状况"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="1" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+		<DataField 
+			 name="地下室装修面积1"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="4" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+		<DataField 
+			 name="地面居住面积"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="4" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+		<DataField 
+			 name="地面以上卧室数量"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="1" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+		<DataField 
+			 name="地面以上厨房数量"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="1" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+		<DataField 
+			 name="地面以上房间总数"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="2" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+		<DataField 
+			 name="壁炉数量"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="1" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+		<DataField 
+			 name="车库容纳车辆数量"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="1" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+		<DataField 
+			 name="木质甲板面积"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="3" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+		<DataField 
+			 name="遮屏门廊面积"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="3" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+	</DataDictionary>
+	<GeneralRegressionModel 
+		 targetVariableName="SalePrice"
+		 modelType="regression"
+		 functionName="regression">
+		<Extension  extender="spss.com"  name="numberParameters"  value="54" />
+		<Extension  extender="spss.com"  name="modelDF"  value="1406" />
+		<MiningSchema >
+			<MiningField  name="SalePrice"  usageType="predicted" />
+			<MiningField  name="房屋分类_5"  usageType="active" />
+			<MiningField  name="区域分类_2"  usageType="active" />
+			<MiningField  name="区域分类_4"  usageType="active" />
+			<MiningField  name="区域分类_5"  usageType="active" />
+			<MiningField  name="地块配置_2"  usageType="active" />
+			<MiningField  name="建筑类型_4"  usageType="active" />
+			<MiningField  name="建筑类型_5"  usageType="active" />
+			<MiningField  name="房屋风格_4"  usageType="active" />
+			<MiningField  name="房屋风格_5"  usageType="active" />
+			<MiningField  name="房屋风格_6"  usageType="active" />
+			<MiningField  name="房屋风格_7"  usageType="active" />
+			<MiningField  name="屋顶样式_4"  usageType="active" />
+			<MiningField  name="屋顶材料_2"  usageType="active" />
+			<MiningField  name="供暖系统_3"  usageType="active" />
+			<MiningField  name="功能性_2"  usageType="active" />
+			<MiningField  name="销售类型_7"  usageType="active" />
+			<MiningField  name="销售条件_3"  usageType="active" />
+			<MiningField  name="销售条件_5"  usageType="active" />
+			<MiningField  name="环境条件_1_3"  usageType="active" />
+			<MiningField  name="环境条件_1_5"  usageType="active" />
+			<MiningField  name="环境条件_1_12"  usageType="active" />
+			<MiningField  name="环境条件_1_16"  usageType="active" />
+			<MiningField  name="外墙材料_1_7"  usageType="active" />
+			<MiningField  name="外墙材料_1_8"  usageType="active" />
+			<MiningField  name="外墙材料_1_12"  usageType="active" />
+			<MiningField  name="外墙材料_1_15"  usageType="active" />
+			<MiningField  name="外墙材料_1_17"  usageType="active" />
+			<MiningField  name="外墙材料_1_35"  usageType="active" />
+			<MiningField  name="外墙材料_1_49"  usageType="active" />
+			<MiningField  name="外墙材料_1_55"  usageType="active" />
+			<MiningField  name="地下室装修类型_1_4"  usageType="active" />
+			<MiningField  name="地下室装修类型_1_12"  usageType="active" />
+			<MiningField  name="地下室装修类型_1_16"  usageType="active" />
+			<MiningField  name="地下室装修类型_1_17"  usageType="active" />
+			<MiningField  name="地下室装修类型_1_27"  usageType="active" />
+			<MiningField  name="外部质量_N"  usageType="active" />
+			<MiningField  name="地下室质量_N"  usageType="active" />
+			<MiningField  name="地下室采光_N"  usageType="active" />
+			<MiningField  name="中央空调_N"  usageType="active" />
+			<MiningField  name="厨房质量_N"  usageType="active" />
+			<MiningField  name="车库装修情况_N"  usageType="active" />
+			<MiningField  name="占地面积"  usageType="active" />
+			<MiningField  name="总体质量"  usageType="active" />
+			<MiningField  name="总体状况"  usageType="active" />
+			<MiningField  name="地下室装修面积1"  usageType="active" />
+			<MiningField  name="地面居住面积"  usageType="active" />
+			<MiningField  name="地面以上卧室数量"  usageType="active" />
+			<MiningField  name="地面以上厨房数量"  usageType="active" />
+			<MiningField  name="地面以上房间总数"  usageType="active" />
+			<MiningField  name="壁炉数量"  usageType="active" />
+			<MiningField  name="车库容纳车辆数量"  usageType="active" />
+			<MiningField  name="木质甲板面积"  usageType="active" />
+			<MiningField  name="遮屏门廊面积"  usageType="active" />
+		</MiningSchema>
+		<ParameterList >
+			<Parameter  name="(Constant)"  label="(Constant)" />
+			<Parameter  name="房屋分类_5"  label="房屋分类=1-1/2 STORY FINISHED ALL AGES" />
+			<Parameter  name="区域分类_2"  label="区域分类=C (all)" />
+			<Parameter  name="区域分类_4"  label="区域分类=RH" />
+			<Parameter  name="区域分类_5"  label="区域分类=0" />
+			<Parameter  name="地块配置_2"  label="地块配置=CulDSac" />
+			<Parameter  name="建筑类型_4"  label="建筑类型=Twnhs" />
+			<Parameter  name="建筑类型_5"  label="建筑类型=TwnhsE" />
+			<Parameter  name="房屋风格_4"  label="房屋风格=2.5Fin" />
+			<Parameter  name="房屋风格_5"  label="房屋风格=2.5Unf" />
+			<Parameter  name="房屋风格_6"  label="房屋风格=2Story" />
+			<Parameter  name="房屋风格_7"  label="房屋风格=SFoyer" />
+			<Parameter  name="屋顶样式_4"  label="屋顶样式=Hip" />
+			<Parameter  name="屋顶材料_2"  label="屋顶材料=CompShg" />
+			<Parameter  name="供暖系统_3"  label="供暖系统=GasW" />
+			<Parameter  name="功能性_2"  label="功能性=Maj2" />
+			<Parameter  name="销售类型_7"  label="销售类型=New" />
+			<Parameter  name="销售条件_3"  label="销售条件=Alloca" />
+			<Parameter  name="销售条件_5"  label="销售条件=Normal" />
+			<Parameter  name="环境条件_1_3"  label="环境条件1=Artery * 环境条件2=PosA" />
+			<Parameter  name="环境条件_1_5"  label="环境条件1=Feedr * 环境条件2=Norm" />
+			<Parameter  name="环境条件_1_12"  label="环境条件1=PosN * 环境条件2=PosN" />
+			<Parameter  name="环境条件_1_16"  label="环境条件1=RRNe * 环境条件2=Norm" />
+			<Parameter  name="外墙材料_1_7"  label="外墙材料1=BrkFace * 外墙材料2=BrkFace" />
+			<Parameter  name="外墙材料_1_8"  label="外墙材料1=BrkFace * 外墙材料2=HdBoard" />
+			<Parameter  name="外墙材料_1_12"  label="外墙材料1=BrkFace * 外墙材料2=Wd Sdng" />
+			<Parameter  name="外墙材料_1_15"  label="外墙材料1=CemntBd * 外墙材料2=CmentBd" />
+			<Parameter  name="外墙材料_1_17"  label="外墙材料1=CemntBd * 外墙材料2=Wd Shng" />
+			<Parameter  name="外墙材料_1_35"  label="外墙材料1=Plywood * 外墙材料2=Plywood" />
+			<Parameter  name="外墙材料_1_49"  label="外墙材料1=VinylSd * 外墙材料2=VinylSd" />
+			<Parameter  name="外墙材料_1_55"  label="外墙材料1=Wd Sdng * 外墙材料2=ImStucc" />
+			<Parameter  name="地下室装修类型_1_4"  label="地下室装修类型1=ALQ * 地下室装修类型2=Rec" />
+			<Parameter  name="地下室装修类型_1_12"  label="地下室装修类型1=GLQ * 地下室装修类型2=ALQ" />
+			<Parameter  name="地下室装修类型_1_16"  label="地下室装修类型1=GLQ * 地下室装修类型2=Unf" />
+			<Parameter  name="地下室装修类型_1_17"  label="地下室装修类型1=Gd * 地下室装修类型2=Unf" />
+			<Parameter  name="地下室装修类型_1_27"  label="地下室装修类型1=TA * 地下室装修类型2=Unf" />
+			<Parameter  name="外部质量_N"  label="外部质量_N" />
+			<Parameter  name="地下室质量_N"  label="地下室质量_N" />
+			<Parameter  name="地下室采光_N"  label="地下室采光_N" />
+			<Parameter  name="中央空调_N"  label="中央空调_N" />
+			<Parameter  name="厨房质量_N"  label="厨房质量_N" />
+			<Parameter  name="车库装修情况_N"  label="车库装修情况_N" />
+			<Parameter  name="占地面积"  label="占地面积" />
+			<Parameter  name="总体质量"  label="总体质量" />
+			<Parameter  name="总体状况"  label="总体状况" />
+			<Parameter  name="地下室装修面积1"  label="地下室装修面积1" />
+			<Parameter  name="地面居住面积"  label="地面居住面积" />
+			<Parameter  name="地面以上卧室数量"  label="地面以上卧室数量" />
+			<Parameter  name="地面以上厨房数量"  label="地面以上厨房数量" />
+			<Parameter  name="地面以上房间总数"  label="地面以上房间总数" />
+			<Parameter  name="壁炉数量"  label="壁炉数量" />
+			<Parameter  name="车库容纳车辆数量"  label="车库容纳车辆数量" />
+			<Parameter  name="木质甲板面积"  label="木质甲板面积" />
+			<Parameter  name="遮屏门廊面积"  label="遮屏门廊面积" />
+		</ParameterList>
+		<CovariateList >
+			<Predictor  name="房屋分类_5" />
+			<Predictor  name="区域分类_2" />
+			<Predictor  name="区域分类_4" />
+			<Predictor  name="区域分类_5" />
+			<Predictor  name="地块配置_2" />
+			<Predictor  name="建筑类型_4" />
+			<Predictor  name="建筑类型_5" />
+			<Predictor  name="房屋风格_4" />
+			<Predictor  name="房屋风格_5" />
+			<Predictor  name="房屋风格_6" />
+			<Predictor  name="房屋风格_7" />
+			<Predictor  name="屋顶样式_4" />
+			<Predictor  name="屋顶材料_2" />
+			<Predictor  name="供暖系统_3" />
+			<Predictor  name="功能性_2" />
+			<Predictor  name="销售类型_7" />
+			<Predictor  name="销售条件_3" />
+			<Predictor  name="销售条件_5" />
+			<Predictor  name="环境条件_1_3" />
+			<Predictor  name="环境条件_1_5" />
+			<Predictor  name="环境条件_1_12" />
+			<Predictor  name="环境条件_1_16" />
+			<Predictor  name="外墙材料_1_7" />
+			<Predictor  name="外墙材料_1_8" />
+			<Predictor  name="外墙材料_1_12" />
+			<Predictor  name="外墙材料_1_15" />
+			<Predictor  name="外墙材料_1_17" />
+			<Predictor  name="外墙材料_1_35" />
+			<Predictor  name="外墙材料_1_49" />
+			<Predictor  name="外墙材料_1_55" />
+			<Predictor  name="地下室装修类型_1_4" />
+			<Predictor  name="地下室装修类型_1_12" />
+			<Predictor  name="地下室装修类型_1_16" />
+			<Predictor  name="地下室装修类型_1_17" />
+			<Predictor  name="地下室装修类型_1_27" />
+			<Predictor  name="外部质量_N" />
+			<Predictor  name="地下室质量_N" />
+			<Predictor  name="地下室采光_N" />
+			<Predictor  name="中央空调_N" />
+			<Predictor  name="厨房质量_N" />
+			<Predictor  name="车库装修情况_N" />
+			<Predictor  name="占地面积" />
+			<Predictor  name="总体质量" />
+			<Predictor  name="总体状况" />
+			<Predictor  name="地下室装修面积1" />
+			<Predictor  name="地面居住面积" />
+			<Predictor  name="地面以上卧室数量" />
+			<Predictor  name="地面以上厨房数量" />
+			<Predictor  name="地面以上房间总数" />
+			<Predictor  name="壁炉数量" />
+			<Predictor  name="车库容纳车辆数量" />
+			<Predictor  name="木质甲板面积" />
+			<Predictor  name="遮屏门廊面积" />
+		</CovariateList>
+		<PPMatrix >
+			<PPCell  value="1"  predictorName="房屋分类_5"  parameterName="房屋分类_5" />
+			<PPCell  value="1"  predictorName="区域分类_2"  parameterName="区域分类_2" />
+			<PPCell  value="1"  predictorName="区域分类_4"  parameterName="区域分类_4" />
+			<PPCell  value="1"  predictorName="区域分类_5"  parameterName="区域分类_5" />
+			<PPCell  value="1"  predictorName="地块配置_2"  parameterName="地块配置_2" />
+			<PPCell  value="1"  predictorName="建筑类型_4"  parameterName="建筑类型_4" />
+			<PPCell  value="1"  predictorName="建筑类型_5"  parameterName="建筑类型_5" />
+			<PPCell  value="1"  predictorName="房屋风格_4"  parameterName="房屋风格_4" />
+			<PPCell  value="1"  predictorName="房屋风格_5"  parameterName="房屋风格_5" />
+			<PPCell  value="1"  predictorName="房屋风格_6"  parameterName="房屋风格_6" />
+			<PPCell  value="1"  predictorName="房屋风格_7"  parameterName="房屋风格_7" />
+			<PPCell  value="1"  predictorName="屋顶样式_4"  parameterName="屋顶样式_4" />
+			<PPCell  value="1"  predictorName="屋顶材料_2"  parameterName="屋顶材料_2" />
+			<PPCell  value="1"  predictorName="供暖系统_3"  parameterName="供暖系统_3" />
+			<PPCell  value="1"  predictorName="功能性_2"  parameterName="功能性_2" />
+			<PPCell  value="1"  predictorName="销售类型_7"  parameterName="销售类型_7" />
+			<PPCell  value="1"  predictorName="销售条件_3"  parameterName="销售条件_3" />
+			<PPCell  value="1"  predictorName="销售条件_5"  parameterName="销售条件_5" />
+			<PPCell  value="1"  predictorName="环境条件_1_3"  parameterName="环境条件_1_3" />
+			<PPCell  value="1"  predictorName="环境条件_1_5"  parameterName="环境条件_1_5" />
+			<PPCell  value="1"  predictorName="环境条件_1_12"  parameterName="环境条件_1_12" />
+			<PPCell  value="1"  predictorName="环境条件_1_16"  parameterName="环境条件_1_16" />
+			<PPCell  value="1"  predictorName="外墙材料_1_7"  parameterName="外墙材料_1_7" />
+			<PPCell  value="1"  predictorName="外墙材料_1_8"  parameterName="外墙材料_1_8" />
+			<PPCell  value="1"  predictorName="外墙材料_1_12"  parameterName="外墙材料_1_12" />
+			<PPCell  value="1"  predictorName="外墙材料_1_15"  parameterName="外墙材料_1_15" />
+			<PPCell  value="1"  predictorName="外墙材料_1_17"  parameterName="外墙材料_1_17" />
+			<PPCell  value="1"  predictorName="外墙材料_1_35"  parameterName="外墙材料_1_35" />
+			<PPCell  value="1"  predictorName="外墙材料_1_49"  parameterName="外墙材料_1_49" />
+			<PPCell  value="1"  predictorName="外墙材料_1_55"  parameterName="外墙材料_1_55" />
+			<PPCell  value="1"  predictorName="地下室装修类型_1_4"  parameterName="地下室装修类型_1_4" />
+			<PPCell  value="1"  predictorName="地下室装修类型_1_12"  parameterName="地下室装修类型_1_12" />
+			<PPCell  value="1"  predictorName="地下室装修类型_1_16"  parameterName="地下室装修类型_1_16" />
+			<PPCell  value="1"  predictorName="地下室装修类型_1_17"  parameterName="地下室装修类型_1_17" />
+			<PPCell  value="1"  predictorName="地下室装修类型_1_27"  parameterName="地下室装修类型_1_27" />
+			<PPCell  value="1"  predictorName="外部质量_N"  parameterName="外部质量_N" />
+			<PPCell  value="1"  predictorName="地下室质量_N"  parameterName="地下室质量_N" />
+			<PPCell  value="1"  predictorName="地下室采光_N"  parameterName="地下室采光_N" />
+			<PPCell  value="1"  predictorName="中央空调_N"  parameterName="中央空调_N" />
+			<PPCell  value="1"  predictorName="厨房质量_N"  parameterName="厨房质量_N" />
+			<PPCell  value="1"  predictorName="车库装修情况_N"  parameterName="车库装修情况_N" />
+			<PPCell  value="1"  predictorName="占地面积"  parameterName="占地面积" />
+			<PPCell  value="1"  predictorName="总体质量"  parameterName="总体质量" />
+			<PPCell  value="1"  predictorName="总体状况"  parameterName="总体状况" />
+			<PPCell  value="1"  predictorName="地下室装修面积1"  parameterName="地下室装修面积1" />
+			<PPCell  value="1"  predictorName="地面居住面积"  parameterName="地面居住面积" />
+			<PPCell  value="1"  predictorName="地面以上卧室数量"  parameterName="地面以上卧室数量" />
+			<PPCell  value="1"  predictorName="地面以上厨房数量"  parameterName="地面以上厨房数量" />
+			<PPCell  value="1"  predictorName="地面以上房间总数"  parameterName="地面以上房间总数" />
+			<PPCell  value="1"  predictorName="壁炉数量"  parameterName="壁炉数量" />
+			<PPCell  value="1"  predictorName="车库容纳车辆数量"  parameterName="车库容纳车辆数量" />
+			<PPCell  value="1"  predictorName="木质甲板面积"  parameterName="木质甲板面积" />
+			<PPCell  value="1"  predictorName="遮屏门廊面积"  parameterName="遮屏门廊面积" />
+		</PPMatrix>
+		<PCovMatrix >
+			<PCovCell  pRow="(Constant)"  pCol="(Constant)"  value="158046698.027764" />
+			<PCovCell  pRow="房屋分类_5"  pCol="房屋分类_5"  value="11344396.708897" />
+			<PCovCell  pRow="房屋分类_5"  pCol="(Constant)"  value="-2318062.95962777" />
+			<PCovCell  pRow="区域分类_2"  pCol="房屋分类_5"  value="-2016890.30050596" />
+			<PCovCell  pRow="区域分类_2"  pCol="区域分类_2"  value="111040995.457448" />
+			<PCovCell  pRow="区域分类_2"  pCol="(Constant)"  value="-21076944.2019894" />
+			<PCovCell  pRow="区域分类_4"  pCol="房屋分类_5"  value="1789809.37808314" />
+			<PCovCell  pRow="区域分类_4"  pCol="区域分类_2"  value="4508151.75952561" />
+			<PCovCell  pRow="区域分类_4"  pCol="区域分类_4"  value="68675736.4894247" />
+			<PCovCell  pRow="区域分类_4"  pCol="(Constant)"  value="-3865230.49057005" />
+			<PCovCell  pRow="区域分类_5"  pCol="房屋分类_5"  value="1499643.94063303" />
+			<PCovCell  pRow="区域分类_5"  pCol="区域分类_2"  value="3512363.41093671" />
+			<PCovCell  pRow="区域分类_5"  pCol="区域分类_4"  value="4270678.70155001" />
+			<PCovCell  pRow="区域分类_5"  pCol="区域分类_5"  value="6397891.61591533" />
+			<PCovCell  pRow="区域分类_5"  pCol="(Constant)"  value="-2747916.17081672" />
+			<PCovCell  pRow="地块配置_2"  pCol="房屋分类_5"  value="75487.4838718202" />
+			<PCovCell  pRow="地块配置_2"  pCol="区域分类_2"  value="-31286.4803322603" />
+			<PCovCell  pRow="地块配置_2"  pCol="区域分类_4"  value="-161358.816698893" />
+			<PCovCell  pRow="地块配置_2"  pCol="区域分类_5"  value="-580757.580162732" />
+			<PCovCell  pRow="地块配置_2"  pCol="地块配置_2"  value="12110941.5727028" />
+			<PCovCell  pRow="地块配置_2"  pCol="(Constant)"  value="-649605.856575177" />
+			<PCovCell  pRow="建筑类型_4"  pCol="房屋分类_5"  value="415932.834097409" />
+			<PCovCell  pRow="建筑类型_4"  pCol="区域分类_2"  value="2376990.75510547" />
+			<PCovCell  pRow="建筑类型_4"  pCol="区域分类_4"  value="2218914.74584835" />
+			<PCovCell  pRow="建筑类型_4"  pCol="区域分类_5"  value="2557969.59420916" />
+			<PCovCell  pRow="建筑类型_4"  pCol="地块配置_2"  value="324082.159165414" />
+			<PCovCell  pRow="建筑类型_4"  pCol="建筑类型_4"  value="29544347.9124133" />
+			<PCovCell  pRow="建筑类型_4"  pCol="(Constant)"  value="-4016698.20271886" />
+			<PCovCell  pRow="建筑类型_5"  pCol="房屋分类_5"  value="120207.244178977" />
+			<PCovCell  pRow="建筑类型_5"  pCol="区域分类_2"  value="2180880.69326465" />
+			<PCovCell  pRow="建筑类型_5"  pCol="区域分类_4"  value="-405194.0514949" />
+			<PCovCell  pRow="建筑类型_5"  pCol="区域分类_5"  value="1962953.1516271" />
+			<PCovCell  pRow="建筑类型_5"  pCol="地块配置_2"  value="-56923.4472949632" />
+			<PCovCell  pRow="建筑类型_5"  pCol="建筑类型_4"  value="4161493.33416426" />
+			<PCovCell  pRow="建筑类型_5"  pCol="建筑类型_5"  value="13493862.9246429" />
+			<PCovCell  pRow="建筑类型_5"  pCol="(Constant)"  value="-2259358.93172548" />
+			<PCovCell  pRow="房屋风格_4"  pCol="房屋分类_5"  value="8734083.33999532" />
+			<PCovCell  pRow="房屋风格_4"  pCol="区域分类_2"  value="-318034.821176568" />
+			<PCovCell  pRow="房屋风格_4"  pCol="区域分类_4"  value="-3664271.03517728" />
+			<PCovCell  pRow="房屋风格_4"  pCol="区域分类_5"  value="2614067.56786183" />
+			<PCovCell  pRow="房屋风格_4"  pCol="地块配置_2"  value="543340.781524754" />
+			<PCovCell  pRow="房屋风格_4"  pCol="建筑类型_4"  value="-2929504.68445614" />
+			<PCovCell  pRow="房屋风格_4"  pCol="建筑类型_5"  value="-2685166.07597211" />
+			<PCovCell  pRow="房屋风格_4"  pCol="房屋风格_4"  value="149353662.052648" />
+			<PCovCell  pRow="房屋风格_4"  pCol="(Constant)"  value="-2402564.55664647" />
+			<PCovCell  pRow="房屋风格_5"  pCol="房屋分类_5"  value="5242633.60736888" />
+			<PCovCell  pRow="房屋风格_5"  pCol="区域分类_2"  value="-7068503.76929331" />
+			<PCovCell  pRow="房屋风格_5"  pCol="区域分类_4"  value="6081601.62399926" />
+			<PCovCell  pRow="房屋风格_5"  pCol="区域分类_5"  value="3196930.36875149" />
+			<PCovCell  pRow="房屋风格_5"  pCol="地块配置_2"  value="-334395.65087485" />
+			<PCovCell  pRow="房屋风格_5"  pCol="建筑类型_4"  value="-360510.421774596" />
+			<PCovCell  pRow="房屋风格_5"  pCol="建筑类型_5"  value="-180107.757345779" />
+			<PCovCell  pRow="房屋风格_5"  pCol="房屋风格_4"  value="11117239.4593125" />
+			<PCovCell  pRow="房屋风格_5"  pCol="房屋风格_5"  value="114323783.67193" />
+			<PCovCell  pRow="房屋风格_5"  pCol="(Constant)"  value="1500358.70932254" />
+			<PCovCell  pRow="房屋风格_6"  pCol="房屋分类_5"  value="3403353.58892707" />
+			<PCovCell  pRow="房屋风格_6"  pCol="区域分类_2"  value="-348892.571934852" />
+			<PCovCell  pRow="房屋风格_6"  pCol="区域分类_4"  value="631409.728103693" />
+			<PCovCell  pRow="房屋风格_6"  pCol="区域分类_5"  value="1190945.97572939" />
+			<PCovCell  pRow="房屋风格_6"  pCol="地块配置_2"  value="-242300.851050684" />
+			<PCovCell  pRow="房屋风格_6"  pCol="建筑类型_4"  value="-2877374.44262574" />
+			<PCovCell  pRow="房屋风格_6"  pCol="建筑类型_5"  value="-527920.69972692" />
+			<PCovCell  pRow="房屋风格_6"  pCol="房屋风格_4"  value="9135073.50609646" />
+			<PCovCell  pRow="房屋风格_6"  pCol="房屋风格_5"  value="4679366.55478984" />
+			<PCovCell  pRow="房屋风格_6"  pCol="房屋风格_6"  value="6618587.73906714" />
+			<PCovCell  pRow="房屋风格_6"  pCol="(Constant)"  value="1601910.07398297" />
+			<PCovCell  pRow="房屋风格_7"  pCol="房屋分类_5"  value="73335.3703788233" />
+			<PCovCell  pRow="房屋风格_7"  pCol="区域分类_2"  value="1782004.34220019" />
+			<PCovCell  pRow="房屋风格_7"  pCol="区域分类_4"  value="-1614700.35373661" />
+			<PCovCell  pRow="房屋风格_7"  pCol="区域分类_5"  value="-127569.404560348" />
+			<PCovCell  pRow="房屋风格_7"  pCol="地块配置_2"  value="-1403429.29916827" />
+			<PCovCell  pRow="房屋风格_7"  pCol="建筑类型_4"  value="-691212.325935301" />
+			<PCovCell  pRow="房屋风格_7"  pCol="建筑类型_5"  value="1207240.88258745" />
+			<PCovCell  pRow="房屋风格_7"  pCol="房屋风格_4"  value="-1793744.89705611" />
+			<PCovCell  pRow="房屋风格_7"  pCol="房屋风格_5"  value="-572577.596226642" />
+			<PCovCell  pRow="房屋风格_7"  pCol="房屋风格_6"  value="32637.6474018334" />
+			<PCovCell  pRow="房屋风格_7"  pCol="房屋风格_7"  value="31316959.2308076" />
+			<PCovCell  pRow="房屋风格_7"  pCol="(Constant)"  value="-1921303.40615846" />
+			<PCovCell  pRow="屋顶样式_4"  pCol="房屋分类_5"  value="1330266.02106573" />
+			<PCovCell  pRow="屋顶样式_4"  pCol="区域分类_2"  value="-1272240.92877701" />
+			<PCovCell  pRow="屋顶样式_4"  pCol="区域分类_4"  value="347908.398171646" />
+			<PCovCell  pRow="屋顶样式_4"  pCol="区域分类_5"  value="-4627.93778203509" />
+			<PCovCell  pRow="屋顶样式_4"  pCol="地块配置_2"  value="-47704.3116012313" />
+			<PCovCell  pRow="屋顶样式_4"  pCol="建筑类型_4"  value="-32453.3601455003" />
+			<PCovCell  pRow="屋顶样式_4"  pCol="建筑类型_5"  value="1338.05385007871" />
+			<PCovCell  pRow="屋顶样式_4"  pCol="房屋风格_4"  value="1894313.52845266" />
+			<PCovCell  pRow="屋顶样式_4"  pCol="房屋风格_5"  value="604238.267085888" />
+			<PCovCell  pRow="屋顶样式_4"  pCol="房屋风格_6"  value="1145727.01434275" />
+			<PCovCell  pRow="屋顶样式_4"  pCol="房屋风格_7"  value="474973.332122625" />
+			<PCovCell  pRow="屋顶样式_4"  pCol="屋顶样式_4"  value="5198758.19017899" />
+			<PCovCell  pRow="屋顶样式_4"  pCol="(Constant)"  value="1799986.78064309" />
+			<PCovCell  pRow="屋顶材料_2"  pCol="房屋分类_5"  value="-2347139.51923138" />
+			<PCovCell  pRow="屋顶材料_2"  pCol="区域分类_2"  value="-665177.452141349" />
+			<PCovCell  pRow="屋顶材料_2"  pCol="区域分类_4"  value="-716051.716180518" />
+			<PCovCell  pRow="屋顶材料_2"  pCol="区域分类_5"  value="-308301.566252661" />
+			<PCovCell  pRow="屋顶材料_2"  pCol="地块配置_2"  value="1116175.81834259" />
+			<PCovCell  pRow="屋顶材料_2"  pCol="建筑类型_4"  value="-88926.2532764071" />
+			<PCovCell  pRow="屋顶材料_2"  pCol="建筑类型_5"  value="-1029621.68554137" />
+			<PCovCell  pRow="屋顶材料_2"  pCol="房屋风格_4"  value="215514.053079968" />
+			<PCovCell  pRow="屋顶材料_2"  pCol="房屋风格_5"  value="-1822418.19689914" />
+			<PCovCell  pRow="屋顶材料_2"  pCol="房屋风格_6"  value="-1443440.30938019" />
+			<PCovCell  pRow="屋顶材料_2"  pCol="房屋风格_7"  value="755612.816864944" />
+			<PCovCell  pRow="屋顶材料_2"  pCol="屋顶样式_4"  value="-1166200.94103811" />
+			<PCovCell  pRow="屋顶材料_2"  pCol="屋顶材料_2"  value="45283454.1079085" />
+			<PCovCell  pRow="屋顶材料_2"  pCol="(Constant)"  value="-43268810.0117377" />
+			<PCovCell  pRow="供暖系统_3"  pCol="房屋分类_5"  value="-1729603.71175286" />
+			<PCovCell  pRow="供暖系统_3"  pCol="区域分类_2"  value="-991251.64144635" />
+			<PCovCell  pRow="供暖系统_3"  pCol="区域分类_4"  value="2962269.63256788" />
+			<PCovCell  pRow="供暖系统_3"  pCol="区域分类_5"  value="734483.720432014" />
+			<PCovCell  pRow="供暖系统_3"  pCol="地块配置_2"  value="1002337.21019164" />
+			<PCovCell  pRow="供暖系统_3"  pCol="建筑类型_4"  value="-982580.404709695" />
+			<PCovCell  pRow="供暖系统_3"  pCol="建筑类型_5"  value="-1089367.52284432" />
+			<PCovCell  pRow="供暖系统_3"  pCol="房屋风格_4"  value="2963420.64799996" />
+			<PCovCell  pRow="供暖系统_3"  pCol="房屋风格_5"  value="-7227073.68334143" />
+			<PCovCell  pRow="供暖系统_3"  pCol="房屋风格_6"  value="541377.471470531" />
+			<PCovCell  pRow="供暖系统_3"  pCol="房屋风格_7"  value="-1137273.93616413" />
+			<PCovCell  pRow="供暖系统_3"  pCol="屋顶样式_4"  value="201046.718933492" />
+			<PCovCell  pRow="供暖系统_3"  pCol="屋顶材料_2"  value="826493.688579508" />
+			<PCovCell  pRow="供暖系统_3"  pCol="供暖系统_3"  value="65328345.2633175" />
+			<PCovCell  pRow="供暖系统_3"  pCol="(Constant)"  value="-5525163.66377934" />
+			<PCovCell  pRow="功能性_2"  pCol="房屋分类_5"  value="671942.760283649" />
+			<PCovCell  pRow="功能性_2"  pCol="区域分类_2"  value="4220445.98641018" />
+			<PCovCell  pRow="功能性_2"  pCol="区域分类_4"  value="757542.961771311" />
+			<PCovCell  pRow="功能性_2"  pCol="区域分类_5"  value="712247.154263964" />
+			<PCovCell  pRow="功能性_2"  pCol="地块配置_2"  value="-224030.530162749" />
+			<PCovCell  pRow="功能性_2"  pCol="建筑类型_4"  value="2318251.65673614" />
+			<PCovCell  pRow="功能性_2"  pCol="建筑类型_5"  value="2385531.23087858" />
+			<PCovCell  pRow="功能性_2"  pCol="房屋风格_4"  value="-585005.989375386" />
+			<PCovCell  pRow="功能性_2"  pCol="房屋风格_5"  value="2661929.91368351" />
+			<PCovCell  pRow="功能性_2"  pCol="房屋风格_6"  value="553517.871696971" />
+			<PCovCell  pRow="功能性_2"  pCol="房屋风格_7"  value="-317186.503532685" />
+			<PCovCell  pRow="功能性_2"  pCol="屋顶样式_4"  value="-1408891.88181681" />
+			<PCovCell  pRow="功能性_2"  pCol="屋顶材料_2"  value="-944639.862311075" />
+			<PCovCell  pRow="功能性_2"  pCol="供暖系统_3"  value="-11465094.5322073" />
+			<PCovCell  pRow="功能性_2"  pCol="功能性_2"  value="205892466.468314" />
+			<PCovCell  pRow="功能性_2"  pCol="(Constant)"  value="-16033520.7280974" />
+			<PCovCell  pRow="销售类型_7"  pCol="房屋分类_5"  value="261897.91344248" />
+			<PCovCell  pRow="销售类型_7"  pCol="区域分类_2"  value="3588619.18154823" />
+			<PCovCell  pRow="销售类型_7"  pCol="区域分类_4"  value="1492326.13877739" />
+			<PCovCell  pRow="销售类型_7"  pCol="区域分类_5"  value="369867.916362065" />
+			<PCovCell  pRow="销售类型_7"  pCol="地块配置_2"  value="578265.853621" />
+			<PCovCell  pRow="销售类型_7"  pCol="建筑类型_4"  value="2051068.19226912" />
+			<PCovCell  pRow="销售类型_7"  pCol="建筑类型_5"  value="643687.559128839" />
+			<PCovCell  pRow="销售类型_7"  pCol="房屋风格_4"  value="1205339.58257379" />
+			<PCovCell  pRow="销售类型_7"  pCol="房屋风格_5"  value="-795513.54855827" />
+			<PCovCell  pRow="销售类型_7"  pCol="房屋风格_6"  value="53186.7591138372" />
+			<PCovCell  pRow="销售类型_7"  pCol="房屋风格_7"  value="560655.408192728" />
+			<PCovCell  pRow="销售类型_7"  pCol="屋顶样式_4"  value="-338571.648787017" />
+			<PCovCell  pRow="销售类型_7"  pCol="屋顶材料_2"  value="-1043120.22613808" />
+			<PCovCell  pRow="销售类型_7"  pCol="供暖系统_3"  value="-109683.246306876" />
+			<PCovCell  pRow="销售类型_7"  pCol="功能性_2"  value="705756.52440477" />
+			<PCovCell  pRow="销售类型_7"  pCol="销售类型_7"  value="19897180.1847932" />
+			<PCovCell  pRow="销售类型_7"  pCol="(Constant)"  value="-73306.7200428503" />
+			<PCovCell  pRow="销售条件_3"  pCol="房屋分类_5"  value="951818.341324148" />
+			<PCovCell  pRow="销售条件_3"  pCol="区域分类_2"  value="-6590187.44661695" />
+			<PCovCell  pRow="销售条件_3"  pCol="区域分类_4"  value="3875907.70490948" />
+			<PCovCell  pRow="销售条件_3"  pCol="区域分类_5"  value="673885.379109661" />
+			<PCovCell  pRow="销售条件_3"  pCol="地块配置_2"  value="-895183.92579936" />
+			<PCovCell  pRow="销售条件_3"  pCol="建筑类型_4"  value="1049200.16129027" />
+			<PCovCell  pRow="销售条件_3"  pCol="建筑类型_5"  value="414231.43250522" />
+			<PCovCell  pRow="销售条件_3"  pCol="房屋风格_4"  value="3321218.98985282" />
+			<PCovCell  pRow="销售条件_3"  pCol="房屋风格_5"  value="2614951.00672005" />
+			<PCovCell  pRow="销售条件_3"  pCol="房屋风格_6"  value="403863.326086665" />
+			<PCovCell  pRow="销售条件_3"  pCol="房屋风格_7"  value="-6369692.75138146" />
+			<PCovCell  pRow="销售条件_3"  pCol="屋顶样式_4"  value="-433296.398910408" />
+			<PCovCell  pRow="销售条件_3"  pCol="屋顶材料_2"  value="-49117.1370223558" />
+			<PCovCell  pRow="销售条件_3"  pCol="供暖系统_3"  value="573637.262966961" />
+			<PCovCell  pRow="销售条件_3"  pCol="功能性_2"  value="-161761.984867459" />
+			<PCovCell  pRow="销售条件_3"  pCol="销售类型_7"  value="7745357.12398387" />
+			<PCovCell  pRow="销售条件_3"  pCol="销售条件_3"  value="100717704.968353" />
+			<PCovCell  pRow="销售条件_3"  pCol="(Constant)"  value="2419679.64437332" />
+			<PCovCell  pRow="销售条件_5"  pCol="房屋分类_5"  value="-90247.5264826037" />
+			<PCovCell  pRow="销售条件_5"  pCol="区域分类_2"  value="3482580.26868742" />
+			<PCovCell  pRow="销售条件_5"  pCol="区域分类_4"  value="1320347.12362859" />
+			<PCovCell  pRow="销售条件_5"  pCol="区域分类_5"  value="-286126.679206995" />
+			<PCovCell  pRow="销售条件_5"  pCol="地块配置_2"  value="162263.089635907" />
+			<PCovCell  pRow="销售条件_5"  pCol="建筑类型_4"  value="490118.740822947" />
+			<PCovCell  pRow="销售条件_5"  pCol="建筑类型_5"  value="-44995.6918632843" />
+			<PCovCell  pRow="销售条件_5"  pCol="房屋风格_4"  value="615098.897223303" />
+			<PCovCell  pRow="销售条件_5"  pCol="房屋风格_5"  value="-1686884.66223179" />
+			<PCovCell  pRow="销售条件_5"  pCol="房屋风格_6"  value="-490496.582307183" />
+			<PCovCell  pRow="销售条件_5"  pCol="房屋风格_7"  value="241329.492964767" />
+			<PCovCell  pRow="销售条件_5"  pCol="屋顶样式_4"  value="-231775.731155518" />
+			<PCovCell  pRow="销售条件_5"  pCol="屋顶材料_2"  value="-960980.975638782" />
+			<PCovCell  pRow="销售条件_5"  pCol="供暖系统_3"  value="-492416.464798372" />
+			<PCovCell  pRow="销售条件_5"  pCol="功能性_2"  value="239625.369523889" />
+			<PCovCell  pRow="销售条件_5"  pCol="销售类型_7"  value="8636721.00345245" />
+			<PCovCell  pRow="销售条件_5"  pCol="销售条件_3"  value="7844942.08666202" />
+			<PCovCell  pRow="销售条件_5"  pCol="销售条件_5"  value="9175648.50513552" />
+			<PCovCell  pRow="销售条件_5"  pCol="(Constant)"  value="-5335988.0785028" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="房屋分类_5"  value="4455544.95190015" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="区域分类_2"  value="2197664.46607574" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="区域分类_4"  value="-1537870.61783243" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="区域分类_5"  value="2082102.11496759" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="地块配置_2"  value="1193747.73630612" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="建筑类型_4"  value="1814338.93229082" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="建筑类型_5"  value="1036179.72953141" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="房屋风格_4"  value="10772478.3854575" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="房屋风格_5"  value="-101961012.275519" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="房屋风格_6"  value="3840109.74113214" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="房屋风格_7"  value="-3664598.29183014" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="屋顶样式_4"  value="3076585.49054748" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="屋顶材料_2"  value="-6480425.41192256" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="供暖系统_3"  value="11260353.7764387" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="功能性_2"  value="-329680.517526902" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="销售类型_7"  value="2912853.56117249" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="销售条件_3"  value="697468.091659535" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="销售条件_5"  value="952362.365175877" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="环境条件_1_3"  value="1116642749.68766" />
+			<PCovCell  pRow="环境条件_1_3"  pCol="(Constant)"  value="20716416.1612169" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="房屋分类_5"  value="-294950.657868234" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="区域分类_2"  value="-553022.552379113" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="区域分类_4"  value="-1716172.50784111" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="区域分类_5"  value="-308131.728012202" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="地块配置_2"  value="600556.378628572" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="建筑类型_4"  value="383076.045514192" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="建筑类型_5"  value="73075.1106597989" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="房屋风格_4"  value="-393262.359134033" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="房屋风格_5"  value="-531679.319545715" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="房屋风格_6"  value="2401.39087069812" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="房屋风格_7"  value="-296725.672629464" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="屋顶样式_4"  value="-402812.889508917" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="屋顶材料_2"  value="973258.005952165" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="供暖系统_3"  value="-941471.873046865" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="功能性_2"  value="1027001.19907427" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="销售类型_7"  value="-497793.887864756" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="销售条件_3"  value="-2127218.99286314" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="销售条件_5"  value="-183584.963478694" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="环境条件_1_3"  value="303174.631926029" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="环境条件_1_5"  value="14395954.2190987" />
+			<PCovCell  pRow="环境条件_1_5"  pCol="(Constant)"  value="-1135149.64648944" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="房屋分类_5"  value="657815.200077113" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="区域分类_2"  value="-1148635.38671961" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="区域分类_4"  value="-1671843.51590969" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="区域分类_5"  value="-1757881.12386766" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="地块配置_2"  value="1730723.97045329" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="建筑类型_4"  value="2939710.94672049" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="建筑类型_5"  value="3558061.12043599" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="房屋风格_4"  value="6115636.6029662" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="房屋风格_5"  value="-637072.703318215" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="房屋风格_6"  value="668853.558917132" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="房屋风格_7"  value="1622259.7493023" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="屋顶样式_4"  value="-1570656.403139" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="屋顶材料_2"  value="-6635417.15121168" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="供暖系统_3"  value="4457517.18032232" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="功能性_2"  value="614344.187737497" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="销售类型_7"  value="-5609874.84072277" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="销售条件_3"  value="1193168.932766" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="销售条件_5"  value="500212.58094881" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="环境条件_1_3"  value="12791826.4100933" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="环境条件_1_5"  value="683033.78151396" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="环境条件_1_12"  value="534501984.395145" />
+			<PCovCell  pRow="环境条件_1_12"  pCol="(Constant)"  value="4814862.45208651" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="房屋分类_5"  value="-430959.759443607" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="区域分类_2"  value="-256739.191094226" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="区域分类_4"  value="-364346.190484391" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="区域分类_5"  value="-866399.762683428" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="地块配置_2"  value="-4928327.87217071" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="建筑类型_4"  value="3095485.11328143" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="建筑类型_5"  value="2109594.36367621" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="房屋风格_4"  value="-2983856.69678203" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="房屋风格_5"  value="-3408849.79785565" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="房屋风格_6"  value="-3188604.41453928" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="房屋风格_7"  value="1261542.65023059" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="屋顶样式_4"  value="712852.888713995" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="屋顶材料_2"  value="-1935474.05428196" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="供暖系统_3"  value="-757656.066481586" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="功能性_2"  value="-544190.234204971" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="销售类型_7"  value="672438.011326948" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="销售条件_3"  value="-238437.266160356" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="销售条件_5"  value="-339924.099483133" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="环境条件_1_3"  value="4446681.82701637" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="环境条件_1_5"  value="-162817.785094958" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="环境条件_1_12"  value="1424902.44541789" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="环境条件_1_16"  value="497772841.944707" />
+			<PCovCell  pRow="环境条件_1_16"  pCol="(Constant)"  value="8521465.8002965" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="房屋分类_5"  value="1257331.66688353" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="区域分类_2"  value="-4292758.62178634" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="区域分类_4"  value="671526.915827286" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="区域分类_5"  value="457381.57949221" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="地块配置_2"  value="-76565.3291404849" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="建筑类型_4"  value="-634338.597477706" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="建筑类型_5"  value="-886228.805930888" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="房屋风格_4"  value="2284670.00329645" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="房屋风格_5"  value="3336077.88447934" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="房屋风格_6"  value="1262044.14559255" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="房屋风格_7"  value="-396575.075115758" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="屋顶样式_4"  value="-847320.040698457" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="屋顶材料_2"  value="46329.8910318291" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="供暖系统_3"  value="-597212.442648348" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="功能性_2"  value="2276117.26456812" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="销售类型_7"  value="-365828.720270887" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="销售条件_3"  value="125927.58513293" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="销售条件_5"  value="-1176977.88440532" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="环境条件_1_3"  value="-835519.973298433" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="环境条件_1_5"  value="236158.459252923" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="环境条件_1_12"  value="1207814.53399445" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="环境条件_1_16"  value="-229404.954195963" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="外墙材料_1_7"  value="44953203.7179217" />
+			<PCovCell  pRow="外墙材料_1_7"  pCol="(Constant)"  value="720184.553889105" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="房屋分类_5"  value="2865802.31915912" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="区域分类_2"  value="-751057.377016265" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="区域分类_4"  value="538817.324393205" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="区域分类_5"  value="300265.111417905" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="地块配置_2"  value="-3050028.90367081" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="建筑类型_4"  value="-1642204.55083592" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="建筑类型_5"  value="-980597.459807829" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="房屋风格_4"  value="7565410.199476" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="房屋风格_5"  value="4319973.68353162" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="房屋风格_6"  value="3205572.47017842" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="房屋风格_7"  value="597359.690165501" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="屋顶样式_4"  value="-1239114.24463668" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="屋顶材料_2"  value="-1416681.37800983" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="供暖系统_3"  value="802139.520446121" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="功能性_2"  value="195441.067038232" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="销售类型_7"  value="-279265.592057078" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="销售条件_3"  value="142016.432832562" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="销售条件_5"  value="-874594.363169215" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="环境条件_1_3"  value="2839134.68245735" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="环境条件_1_5"  value="984563.304808284" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="环境条件_1_12"  value="3699869.42238101" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="环境条件_1_16"  value="338271.83163485" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="外墙材料_1_7"  value="3325750.74632897" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="外墙材料_1_8"  value="332639271.480358" />
+			<PCovCell  pRow="外墙材料_1_8"  pCol="(Constant)"  value="3966660.59514522" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="房屋分类_5"  value="40067.0258333719" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="区域分类_2"  value="265725.093956779" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="区域分类_4"  value="-963473.739034708" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="区域分类_5"  value="-387075.681982518" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="地块配置_2"  value="-183952.196294778" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="建筑类型_4"  value="-370584.781657187" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="建筑类型_5"  value="-194504.924057901" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="房屋风格_4"  value="4428850.15006023" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="房屋风格_5"  value="1307664.60646977" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="房屋风格_6"  value="1661983.37143168" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="房屋风格_7"  value="482505.323517478" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="屋顶样式_4"  value="1010246.5256369" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="屋顶材料_2"  value="-2077713.58809044" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="供暖系统_3"  value="-3851714.57451261" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="功能性_2"  value="1387010.73884841" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="销售类型_7"  value="-769990.109092912" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="销售条件_3"  value="-6920593.58560564" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="销售条件_5"  value="-708043.417668685" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="环境条件_1_3"  value="2516621.00959476" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="环境条件_1_5"  value="130056.137004496" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="环境条件_1_12"  value="1079651.73516539" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="环境条件_1_16"  value="-347513.995219295" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="外墙材料_1_7"  value="1923227.32044883" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="外墙材料_1_8"  value="2366216.25963394" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="外墙材料_1_12"  value="87260772.4987134" />
+			<PCovCell  pRow="外墙材料_1_12"  pCol="(Constant)"  value="-562325.529413558" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="房屋分类_5"  value="981618.334939871" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="区域分类_2"  value="660468.176094906" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="区域分类_4"  value="2036525.46376367" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="区域分类_5"  value="1965770.76191275" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="地块配置_2"  value="283975.058560523" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="建筑类型_4"  value="-2722684.80500691" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="建筑类型_5"  value="-1691321.61103548" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="房屋风格_4"  value="73935.0285467035" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="房屋风格_5"  value="1971988.87281206" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="房屋风格_6"  value="661617.999144935" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="房屋风格_7"  value="-3154667.85744897" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="屋顶样式_4"  value="345811.804545328" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="屋顶材料_2"  value="-1312536.50430662" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="供暖系统_3"  value="-555749.313519129" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="功能性_2"  value="17135.8655090914" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="销售类型_7"  value="-1881681.14973184" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="销售条件_3"  value="462479.294047942" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="销售条件_5"  value="-423808.577800012" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="环境条件_1_3"  value="2308832.15081761" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="环境条件_1_5"  value="-63997.1473159351" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="环境条件_1_12"  value="-16908336.4327958" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="环境条件_1_16"  value="2331752.45061088" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="外墙材料_1_7"  value="1726840.30798721" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="外墙材料_1_8"  value="1654864.4103482" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="外墙材料_1_12"  value="751029.275434501" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="外墙材料_1_15"  value="22141734.4324007" />
+			<PCovCell  pRow="外墙材料_1_15"  pCol="(Constant)"  value="4822035.22089737" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="房屋分类_5"  value="1951642.76134861" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="区域分类_2"  value="937802.458645988" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="区域分类_4"  value="1366687.19003858" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="区域分类_5"  value="2658792.39950079" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="地块配置_2"  value="-8888175.38875954" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="建筑类型_4"  value="-1789794.954668" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="建筑类型_5"  value="-2087223.40331821" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="房屋风格_4"  value="6669172.38506837" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="房屋风格_5"  value="-603290.439099934" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="房屋风格_6"  value="-370460.416028311" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="房屋风格_7"  value="-4549113.58466859" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="屋顶样式_4"  value="-1304222.90846478" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="屋顶材料_2"  value="-10791777.9542583" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="供暖系统_3"  value="5446869.56773828" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="功能性_2"  value="-425968.510941709" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="销售类型_7"  value="2097840.14682217" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="销售条件_3"  value="-33130.8532780025" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="销售条件_5"  value="-971607.579053188" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="环境条件_1_3"  value="12780802.7770953" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="环境条件_1_5"  value="-174462.896746552" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="环境条件_1_12"  value="11759708.7316132" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="环境条件_1_16"  value="11916547.6332127" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="外墙材料_1_7"  value="5517476.44166733" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="外墙材料_1_8"  value="3948684.0022146" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="外墙材料_1_12"  value="1479752.19894734" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="外墙材料_1_15"  value="4913442.48717277" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="外墙材料_1_17"  value="1038841526.79044" />
+			<PCovCell  pRow="外墙材料_1_17"  pCol="(Constant)"  value="20233612.9680383" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="房屋分类_5"  value="1113624.8163878" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="区域分类_2"  value="-868509.004700662" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="区域分类_4"  value="-63497.8953177534" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="区域分类_5"  value="-576600.898575424" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="地块配置_2"  value="-68650.0587935714" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="建筑类型_4"  value="-59715.1908997606" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="建筑类型_5"  value="-1043562.81593543" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="房屋风格_4"  value="2427894.5287304" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="房屋风格_5"  value="1320917.00137185" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="房屋风格_6"  value="516389.778313788" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="房屋风格_7"  value="-452103.989021759" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="屋顶样式_4"  value="725010.146212533" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="屋顶材料_2"  value="3192212.66363342" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="供暖系统_3"  value="690091.933448366" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="功能性_2"  value="-315787.375427019" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="销售类型_7"  value="738877.476842534" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="销售条件_3"  value="-3725210.11478434" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="销售条件_5"  value="525881.399086086" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="环境条件_1_3"  value="-1217456.56196959" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="环境条件_1_5"  value="-204544.257884004" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="环境条件_1_12"  value="13929.4061913648" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="环境条件_1_16"  value="753063.73781124" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="外墙材料_1_7"  value="1660894.94673014" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="外墙材料_1_8"  value="1428163.06419255" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="外墙材料_1_12"  value="1922443.08990161" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="外墙材料_1_15"  value="1076353.05169998" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="外墙材料_1_17"  value="2294048.85818707" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="外墙材料_1_35"  value="13356611.1376919" />
+			<PCovCell  pRow="外墙材料_1_35"  pCol="(Constant)"  value="-3154873.96956341" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="房屋分类_5"  value="286147.708344263" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="区域分类_2"  value="610386.147472126" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="区域分类_4"  value="-16352.1713483377" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="区域分类_5"  value="182087.023732875" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="地块配置_2"  value="-138378.615222931" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="建筑类型_4"  value="1048878.67722158" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="建筑类型_5"  value="909578.280350108" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="房屋风格_4"  value="-236890.68407827" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="房屋风格_5"  value="446041.791033012" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="房屋风格_6"  value="-217961.47313769" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="房屋风格_7"  value="438744.972376415" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="屋顶样式_4"  value="372792.100427821" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="屋顶材料_2"  value="-1028178.81427013" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="供暖系统_3"  value="181795.351897277" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="功能性_2"  value="-1120.30565312752" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="销售类型_7"  value="-635575.876611894" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="销售条件_3"  value="200503.935312877" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="销售条件_5"  value="-254.179861524938" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="环境条件_1_3"  value="1171587.04026411" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="环境条件_1_5"  value="-333261.350083325" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="环境条件_1_12"  value="1454025.50069367" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="环境条件_1_16"  value="3601974.41956802" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="外墙材料_1_7"  value="1231172.84997877" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="外墙材料_1_8"  value="1247389.88819825" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="外墙材料_1_12"  value="809550.362210772" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="外墙材料_1_15"  value="2706415.32312281" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="外墙材料_1_17"  value="2172896.7347924" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="外墙材料_1_35"  value="1226812.93876447" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="外墙材料_1_49"  value="5111487.2811937" />
+			<PCovCell  pRow="外墙材料_1_49"  pCol="(Constant)"  value="3109282.31242924" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="房屋分类_5"  value="1584914.43334538" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="区域分类_2"  value="3175672.26485801" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="区域分类_4"  value="1343939.45298238" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="区域分类_5"  value="-121546.088521013" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="地块配置_2"  value="1287133.04143304" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="建筑类型_4"  value="1779652.4764535" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="建筑类型_5"  value="1004389.33493726" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="房屋风格_4"  value="6400081.56288899" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="房屋风格_5"  value="381014.643083287" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="房屋风格_6"  value="97288.4639986144" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="房屋风格_7"  value="-564936.702999821" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="屋顶样式_4"  value="-3219013.9560302" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="屋顶材料_2"  value="-3949282.27806438" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="供暖系统_3"  value="772226.822363237" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="功能性_2"  value="2265845.47343387" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="销售类型_7"  value="6255783.84447115" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="销售条件_3"  value="5622159.46671188" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="销售条件_5"  value="5240522.57785864" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="环境条件_1_3"  value="3072567.0138852" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="环境条件_1_5"  value="1065664.1202021" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="环境条件_1_12"  value="13589330.8113542" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="环境条件_1_16"  value="2363175.52092615" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="外墙材料_1_7"  value="1875109.02808528" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="外墙材料_1_8"  value="4142368.46609172" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="外墙材料_1_12"  value="1472926.24198189" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="外墙材料_1_15"  value="1944888.47427274" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="外墙材料_1_17"  value="7315726.31467312" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="外墙材料_1_35"  value="1619700.74150907" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="外墙材料_1_49"  value="2125077.1449269" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="外墙材料_1_55"  value="342100661.854806" />
+			<PCovCell  pRow="外墙材料_1_55"  pCol="(Constant)"  value="-6308115.00828031" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="房屋分类_5"  value="1501021.03324034" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="区域分类_2"  value="966382.796995027" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="区域分类_4"  value="526160.547491575" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="区域分类_5"  value="-2769.57093912313" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="地块配置_2"  value="1126780.01974272" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="建筑类型_4"  value="-202633.547609171" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="建筑类型_5"  value="-779359.378718081" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="房屋风格_4"  value="2693723.82159952" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="房屋风格_5"  value="1967183.28100168" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="房屋风格_6"  value="634835.054560027" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="房屋风格_7"  value="115890.141828555" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="屋顶样式_4"  value="-276722.247542195" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="屋顶材料_2"  value="-238919.496295673" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="供暖系统_3"  value="-3836010.20911581" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="功能性_2"  value="-7261266.8952917" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="销售类型_7"  value="81734.9784149405" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="销售条件_3"  value="317513.296077544" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="销售条件_5"  value="5177.60516758478" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="环境条件_1_3"  value="-928530.624361916" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="环境条件_1_5"  value="-307519.285334896" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="环境条件_1_12"  value="1129639.66485829" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="环境条件_1_16"  value="-964409.440212721" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="外墙材料_1_7"  value="-1808443.62046736" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="外墙材料_1_8"  value="1095554.0997604" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="外墙材料_1_12"  value="1686585.92149758" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="外墙材料_1_15"  value="-469072.471632398" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="外墙材料_1_17"  value="3074906.20479438" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="外墙材料_1_35"  value="712318.218110822" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="外墙材料_1_49"  value="17562.3243608282" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="外墙材料_1_55"  value="1353543.14961673" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="地下室装修类型_1_4"  value="47857227.0531613" />
+			<PCovCell  pRow="地下室装修类型_1_4"  pCol="(Constant)"  value="-3649493.28054444" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="房屋分类_5"  value="1256761.41497957" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="区域分类_2"  value="-736801.270749478" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="区域分类_4"  value="479790.855289002" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="区域分类_5"  value="1322745.32286457" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="地块配置_2"  value="-1853258.8700184" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="建筑类型_4"  value="899246.21113499" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="建筑类型_5"  value="504505.932454902" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="房屋风格_4"  value="2043092.78630302" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="房屋风格_5"  value="2459066.94737253" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="房屋风格_6"  value="223935.565498556" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="房屋风格_7"  value="-942023.16397552" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="屋顶样式_4"  value="-493092.765532879" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="屋顶材料_2"  value="-1650352.66141469" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="供暖系统_3"  value="625385.115798906" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="功能性_2"  value="235748.496767459" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="销售类型_7"  value="2674635.25240518" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="销售条件_3"  value="-20401.0862525443" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="销售条件_5"  value="-507881.030726601" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="环境条件_1_3"  value="7916119.11373929" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="环境条件_1_5"  value="590884.057576688" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="环境条件_1_12"  value="2019172.66461267" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="环境条件_1_16"  value="914366.760289475" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="外墙材料_1_7"  value="1669775.36806316" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="外墙材料_1_8"  value="3441930.14803023" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="外墙材料_1_12"  value="970097.130323178" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="外墙材料_1_15"  value="756098.362659425" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="外墙材料_1_17"  value="11343193.0506377" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="外墙材料_1_35"  value="84140.4233265078" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="外墙材料_1_49"  value="-1624801.26784544" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="外墙材料_1_55"  value="706227.931636906" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="地下室装修类型_1_4"  value="215059.210556359" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="地下室装修类型_1_12"  value="252729238.057223" />
+			<PCovCell  pRow="地下室装修类型_1_12"  pCol="(Constant)"  value="11232218.0768536" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="房屋分类_5"  value="-203597.462811134" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="区域分类_2"  value="-276573.653629175" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="区域分类_4"  value="472477.1991429" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="区域分类_5"  value="138338.724647444" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="地块配置_2"  value="276025.595332801" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="建筑类型_4"  value="387416.464584203" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="建筑类型_5"  value="-472761.16497375" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="房屋风格_4"  value="-1607027.20674928" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="房屋风格_5"  value="-18166.11918733" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="房屋风格_6"  value="-339721.908340785" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="房屋风格_7"  value="-1167330.67366087" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="屋顶样式_4"  value="530886.959512779" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="屋顶材料_2"  value="60799.1065295503" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="供暖系统_3"  value="581362.684312662" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="功能性_2"  value="-340416.383952286" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="销售类型_7"  value="703978.446645603" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="销售条件_3"  value="-1043373.27136736" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="销售条件_5"  value="-215622.101839179" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="环境条件_1_3"  value="1160631.84637978" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="环境条件_1_5"  value="303628.114171011" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="环境条件_1_12"  value="1225425.10338633" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="环境条件_1_16"  value="-753788.801386056" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="外墙材料_1_7"  value="494172.177118874" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="外墙材料_1_8"  value="-747739.033703444" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="外墙材料_1_12"  value="333521.184027583" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="外墙材料_1_15"  value="-440269.28619" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="外墙材料_1_17"  value="4693226.261396" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="外墙材料_1_35"  value="526997.721985541" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="外墙材料_1_49"  value="-759495.511908989" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="外墙材料_1_55"  value="-539342.007099136" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="地下室装修类型_1_4"  value="443825.179550721" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="地下室装修类型_1_12"  value="3501846.37573296" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="地下室装修类型_1_16"  value="6586564.93536203" />
+			<PCovCell  pRow="地下室装修类型_1_16"  pCol="(Constant)"  value="4046979.16367843" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="房屋分类_5"  value="470997.794302835" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="区域分类_2"  value="2227711.6659521" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="区域分类_4"  value="-3299860.08245575" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="区域分类_5"  value="-881088.948445491" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="地块配置_2"  value="518661.16326553" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="建筑类型_4"  value="104493.195644265" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="建筑类型_5"  value="553843.121299508" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="房屋风格_4"  value="3346384.22234223" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="房屋风格_5"  value="3263057.44093372" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="房屋风格_6"  value="1375855.69231646" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="房屋风格_7"  value="-791112.353713053" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="屋顶样式_4"  value="-190254.955033359" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="屋顶材料_2"  value="-829684.940897014" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="供暖系统_3"  value="901959.42115296" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="功能性_2"  value="908594.972908786" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="销售类型_7"  value="1171992.06198669" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="销售条件_3"  value="3118670.03097315" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="销售条件_5"  value="126337.479908096" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="环境条件_1_3"  value="-4303169.05234181" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="环境条件_1_5"  value="-1969749.77459659" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="环境条件_1_12"  value="-2226980.55053729" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="环境条件_1_16"  value="191129.32779364" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="外墙材料_1_7"  value="716916.394797056" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="外墙材料_1_8"  value="1041899.75602721" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="外墙材料_1_12"  value="586737.446571211" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="外墙材料_1_15"  value="505871.686164938" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="外墙材料_1_17"  value="-2569867.82388213" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="外墙材料_1_35"  value="-1045905.40963806" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="外墙材料_1_49"  value="1216528.85688302" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="外墙材料_1_55"  value="394711.943611086" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="地下室装修类型_1_4"  value="991818.287282718" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="地下室装修类型_1_12"  value="-421561.73175078" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="地下室装修类型_1_16"  value="-369522.957626228" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="地下室装修类型_1_17"  value="75721948.4633538" />
+			<PCovCell  pRow="地下室装修类型_1_17"  pCol="(Constant)"  value="3328186.20864035" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="房屋分类_5"  value="31890.1513483104" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="区域分类_2"  value="5595809.88758805" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="区域分类_4"  value="2306638.51099571" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="区域分类_5"  value="-912620.54181192" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="地块配置_2"  value="-643131.645278745" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="建筑类型_4"  value="634949.268056701" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="建筑类型_5"  value="1133420.0827392" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="房屋风格_4"  value="-895931.964535345" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="房屋风格_5"  value="4022726.44286114" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="房屋风格_6"  value="-108091.33367918" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="房屋风格_7"  value="2853679.80048314" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="屋顶样式_4"  value="-1171599.25793891" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="屋顶材料_2"  value="2536772.41200127" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="供暖系统_3"  value="-86564.1526697803" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="功能性_2"  value="1337150.12850319" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="销售类型_7"  value="-32089.7503014299" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="销售条件_3"  value="-9491736.31221822" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="销售条件_5"  value="-791790.954908927" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="环境条件_1_3"  value="-11027013.5115044" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="环境条件_1_5"  value="-563435.079727898" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="环境条件_1_12"  value="-2721042.08609555" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="环境条件_1_16"  value="1281686.85723505" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="外墙材料_1_7"  value="-3482844.06081125" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="外墙材料_1_8"  value="-612052.711828356" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="外墙材料_1_12"  value="-7772376.03960542" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="外墙材料_1_15"  value="-657668.123941858" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="外墙材料_1_17"  value="-3524299.76648156" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="外墙材料_1_35"  value="604833.699972319" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="外墙材料_1_49"  value="406110.196809515" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="外墙材料_1_55"  value="-684745.0431743" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="地下室装修类型_1_4"  value="1005933.77760627" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="地下室装修类型_1_12"  value="-1667882.0915618" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="地下室装修类型_1_16"  value="-323618.365941113" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="地下室装修类型_1_17"  value="5578428.8375415" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="地下室装修类型_1_27"  value="54575570.5813607" />
+			<PCovCell  pRow="地下室装修类型_1_27"  pCol="(Constant)"  value="-1946045.69177326" />
+			<PCovCell  pRow="外部质量_N"  pCol="房屋分类_5"  value="3140.64479141337" />
+			<PCovCell  pRow="外部质量_N"  pCol="区域分类_2"  value="271189.125287656" />
+			<PCovCell  pRow="外部质量_N"  pCol="区域分类_4"  value="207118.669106417" />
+			<PCovCell  pRow="外部质量_N"  pCol="区域分类_5"  value="-107217.852672304" />
+			<PCovCell  pRow="外部质量_N"  pCol="地块配置_2"  value="-54928.8625411103" />
+			<PCovCell  pRow="外部质量_N"  pCol="建筑类型_4"  value="-285670.026234949" />
+			<PCovCell  pRow="外部质量_N"  pCol="建筑类型_5"  value="-334468.209208983" />
+			<PCovCell  pRow="外部质量_N"  pCol="房屋风格_4"  value="813724.937038728" />
+			<PCovCell  pRow="外部质量_N"  pCol="房屋风格_5"  value="1021537.69813041" />
+			<PCovCell  pRow="外部质量_N"  pCol="房屋风格_6"  value="126266.813996676" />
+			<PCovCell  pRow="外部质量_N"  pCol="房屋风格_7"  value="511881.939399583" />
+			<PCovCell  pRow="外部质量_N"  pCol="屋顶样式_4"  value="-62250.0824873248" />
+			<PCovCell  pRow="外部质量_N"  pCol="屋顶材料_2"  value="171276.841692064" />
+			<PCovCell  pRow="外部质量_N"  pCol="供暖系统_3"  value="-453853.885935423" />
+			<PCovCell  pRow="外部质量_N"  pCol="功能性_2"  value="-666318.120250228" />
+			<PCovCell  pRow="外部质量_N"  pCol="销售类型_7"  value="-583658.8225339" />
+			<PCovCell  pRow="外部质量_N"  pCol="销售条件_3"  value="-252027.397089356" />
+			<PCovCell  pRow="外部质量_N"  pCol="销售条件_5"  value="-103591.632718724" />
+			<PCovCell  pRow="外部质量_N"  pCol="环境条件_1_3"  value="-4486250.23272479" />
+			<PCovCell  pRow="外部质量_N"  pCol="环境条件_1_5"  value="108619.303239615" />
+			<PCovCell  pRow="外部质量_N"  pCol="环境条件_1_12"  value="-467053.216908569" />
+			<PCovCell  pRow="外部质量_N"  pCol="环境条件_1_16"  value="-1260829.96476509" />
+			<PCovCell  pRow="外部质量_N"  pCol="外墙材料_1_7"  value="163973.4340268" />
+			<PCovCell  pRow="外部质量_N"  pCol="外墙材料_1_8"  value="370461.948123369" />
+			<PCovCell  pRow="外部质量_N"  pCol="外墙材料_1_12"  value="65172.1589087886" />
+			<PCovCell  pRow="外部质量_N"  pCol="外墙材料_1_15"  value="-438853.351975991" />
+			<PCovCell  pRow="外部质量_N"  pCol="外墙材料_1_17"  value="-3071368.51633435" />
+			<PCovCell  pRow="外部质量_N"  pCol="外墙材料_1_35"  value="364329.647508962" />
+			<PCovCell  pRow="外部质量_N"  pCol="外墙材料_1_49"  value="-279864.238104563" />
+			<PCovCell  pRow="外部质量_N"  pCol="外墙材料_1_55"  value="612503.058472168" />
+			<PCovCell  pRow="外部质量_N"  pCol="地下室装修类型_1_4"  value="244170.635837059" />
+			<PCovCell  pRow="外部质量_N"  pCol="地下室装修类型_1_12"  value="-1411390.07476203" />
+			<PCovCell  pRow="外部质量_N"  pCol="地下室装修类型_1_16"  value="-249718.712829605" />
+			<PCovCell  pRow="外部质量_N"  pCol="地下室装修类型_1_17"  value="-43813.0156602593" />
+			<PCovCell  pRow="外部质量_N"  pCol="地下室装修类型_1_27"  value="143163.227986962" />
+			<PCovCell  pRow="外部质量_N"  pCol="外部质量_N"  value="1612433.59717786" />
+			<PCovCell  pRow="外部质量_N"  pCol="(Constant)"  value="-3217288.65324512" />
+			<PCovCell  pRow="地下室质量_N"  pCol="房屋分类_5"  value="212356.017367321" />
+			<PCovCell  pRow="地下室质量_N"  pCol="区域分类_2"  value="-361097.993849867" />
+			<PCovCell  pRow="地下室质量_N"  pCol="区域分类_4"  value="11184.9791613742" />
+			<PCovCell  pRow="地下室质量_N"  pCol="区域分类_5"  value="-153137.975130014" />
+			<PCovCell  pRow="地下室质量_N"  pCol="地块配置_2"  value="-128743.829121135" />
+			<PCovCell  pRow="地下室质量_N"  pCol="建筑类型_4"  value="-438841.248653664" />
+			<PCovCell  pRow="地下室质量_N"  pCol="建筑类型_5"  value="-376190.80678035" />
+			<PCovCell  pRow="地下室质量_N"  pCol="房屋风格_4"  value="182913.403757023" />
+			<PCovCell  pRow="地下室质量_N"  pCol="房屋风格_5"  value="-79337.9832939364" />
+			<PCovCell  pRow="地下室质量_N"  pCol="房屋风格_6"  value="21289.9428529691" />
+			<PCovCell  pRow="地下室质量_N"  pCol="房屋风格_7"  value="-711297.381325184" />
+			<PCovCell  pRow="地下室质量_N"  pCol="屋顶样式_4"  value="44316.3422610721" />
+			<PCovCell  pRow="地下室质量_N"  pCol="屋顶材料_2"  value="-98962.9645321078" />
+			<PCovCell  pRow="地下室质量_N"  pCol="供暖系统_3"  value="16110.6570005317" />
+			<PCovCell  pRow="地下室质量_N"  pCol="功能性_2"  value="1150009.79482389" />
+			<PCovCell  pRow="地下室质量_N"  pCol="销售类型_7"  value="-660489.665625543" />
+			<PCovCell  pRow="地下室质量_N"  pCol="销售条件_3"  value="-35009.92821162" />
+			<PCovCell  pRow="地下室质量_N"  pCol="销售条件_5"  value="-183975.068138032" />
+			<PCovCell  pRow="地下室质量_N"  pCol="环境条件_1_3"  value="1929362.50927513" />
+			<PCovCell  pRow="地下室质量_N"  pCol="环境条件_1_5"  value="87839.7335252285" />
+			<PCovCell  pRow="地下室质量_N"  pCol="环境条件_1_12"  value="508980.45606324" />
+			<PCovCell  pRow="地下室质量_N"  pCol="环境条件_1_16"  value="-410982.486828266" />
+			<PCovCell  pRow="地下室质量_N"  pCol="外墙材料_1_7"  value="294215.591095709" />
+			<PCovCell  pRow="地下室质量_N"  pCol="外墙材料_1_8"  value="200317.478263472" />
+			<PCovCell  pRow="地下室质量_N"  pCol="外墙材料_1_12"  value="24201.839169789" />
+			<PCovCell  pRow="地下室质量_N"  pCol="外墙材料_1_15"  value="-286974.414146275" />
+			<PCovCell  pRow="地下室质量_N"  pCol="外墙材料_1_17"  value="1202437.37094631" />
+			<PCovCell  pRow="地下室质量_N"  pCol="外墙材料_1_35"  value="-263435.816420667" />
+			<PCovCell  pRow="地下室质量_N"  pCol="外墙材料_1_49"  value="-420335.582564876" />
+			<PCovCell  pRow="地下室质量_N"  pCol="外墙材料_1_55"  value="-94982.5320299675" />
+			<PCovCell  pRow="地下室质量_N"  pCol="地下室装修类型_1_4"  value="220925.688629594" />
+			<PCovCell  pRow="地下室质量_N"  pCol="地下室装修类型_1_12"  value="307744.524373438" />
+			<PCovCell  pRow="地下室质量_N"  pCol="地下室装修类型_1_16"  value="-286129.908528616" />
+			<PCovCell  pRow="地下室质量_N"  pCol="地下室装修类型_1_17"  value="-1053862.26810277" />
+			<PCovCell  pRow="地下室质量_N"  pCol="地下室装修类型_1_27"  value="-1211323.39253678" />
+			<PCovCell  pRow="地下室质量_N"  pCol="外部质量_N"  value="-163265.141964229" />
+			<PCovCell  pRow="地下室质量_N"  pCol="地下室质量_N"  value="974257.229371974" />
+			<PCovCell  pRow="地下室质量_N"  pCol="(Constant)"  value="-3266260.35871056" />
+			<PCovCell  pRow="地下室采光_N"  pCol="房屋分类_5"  value="-9324.91986741995" />
+			<PCovCell  pRow="地下室采光_N"  pCol="区域分类_2"  value="55102.2960648702" />
+			<PCovCell  pRow="地下室采光_N"  pCol="区域分类_4"  value="72167.1610252357" />
+			<PCovCell  pRow="地下室采光_N"  pCol="区域分类_5"  value="42401.6032540709" />
+			<PCovCell  pRow="地下室采光_N"  pCol="地块配置_2"  value="6494.72771936206" />
+			<PCovCell  pRow="地下室采光_N"  pCol="建筑类型_4"  value="12150.236663485" />
+			<PCovCell  pRow="地下室采光_N"  pCol="建筑类型_5"  value="15174.8861995251" />
+			<PCovCell  pRow="地下室采光_N"  pCol="房屋风格_4"  value="80907.4415480886" />
+			<PCovCell  pRow="地下室采光_N"  pCol="房屋风格_5"  value="15399.7190326637" />
+			<PCovCell  pRow="地下室采光_N"  pCol="房屋风格_6"  value="10457.9474182305" />
+			<PCovCell  pRow="地下室采光_N"  pCol="房屋风格_7"  value="130040.804665094" />
+			<PCovCell  pRow="地下室采光_N"  pCol="屋顶样式_4"  value="-9585.96498632414" />
+			<PCovCell  pRow="地下室采光_N"  pCol="屋顶材料_2"  value="345570.434394285" />
+			<PCovCell  pRow="地下室采光_N"  pCol="供暖系统_3"  value="89880.2490111738" />
+			<PCovCell  pRow="地下室采光_N"  pCol="功能性_2"  value="-37745.7435288857" />
+			<PCovCell  pRow="地下室采光_N"  pCol="销售类型_7"  value="24599.2283408887" />
+			<PCovCell  pRow="地下室采光_N"  pCol="销售条件_3"  value="59512.6864610988" />
+			<PCovCell  pRow="地下室采光_N"  pCol="销售条件_5"  value="-217.683853883426" />
+			<PCovCell  pRow="地下室采光_N"  pCol="环境条件_1_3"  value="76062.1210098484" />
+			<PCovCell  pRow="地下室采光_N"  pCol="环境条件_1_5"  value="-24743.136947712" />
+			<PCovCell  pRow="地下室采光_N"  pCol="环境条件_1_12"  value="119294.749752387" />
+			<PCovCell  pRow="地下室采光_N"  pCol="环境条件_1_16"  value="-8168.35510812273" />
+			<PCovCell  pRow="地下室采光_N"  pCol="外墙材料_1_7"  value="25509.6716263155" />
+			<PCovCell  pRow="地下室采光_N"  pCol="外墙材料_1_8"  value="278508.966915205" />
+			<PCovCell  pRow="地下室采光_N"  pCol="外墙材料_1_12"  value="31077.3073527992" />
+			<PCovCell  pRow="地下室采光_N"  pCol="外墙材料_1_15"  value="22945.8587958088" />
+			<PCovCell  pRow="地下室采光_N"  pCol="外墙材料_1_17"  value="-606633.893968495" />
+			<PCovCell  pRow="地下室采光_N"  pCol="外墙材料_1_35"  value="7150.18348713783" />
+			<PCovCell  pRow="地下室采光_N"  pCol="外墙材料_1_49"  value="37571.3981418118" />
+			<PCovCell  pRow="地下室采光_N"  pCol="外墙材料_1_55"  value="211358.35445309" />
+			<PCovCell  pRow="地下室采光_N"  pCol="地下室装修类型_1_4"  value="-5914.90550375874" />
+			<PCovCell  pRow="地下室采光_N"  pCol="地下室装修类型_1_12"  value="-65166.3184422808" />
+			<PCovCell  pRow="地下室采光_N"  pCol="地下室装修类型_1_16"  value="-21907.8651443632" />
+			<PCovCell  pRow="地下室采光_N"  pCol="地下室装修类型_1_17"  value="-29013.7421784121" />
+			<PCovCell  pRow="地下室采光_N"  pCol="地下室装修类型_1_27"  value="-25267.9737448064" />
+			<PCovCell  pRow="地下室采光_N"  pCol="外部质量_N"  value="28490.2856478654" />
+			<PCovCell  pRow="地下室采光_N"  pCol="地下室质量_N"  value="-7029.58351649674" />
+			<PCovCell  pRow="地下室采光_N"  pCol="地下室采光_N"  value="156090.594420227" />
+			<PCovCell  pRow="地下室采光_N"  pCol="(Constant)"  value="-822797.49199466" />
+			<PCovCell  pRow="中央空调_N"  pCol="房屋分类_5"  value="-412971.139616128" />
+			<PCovCell  pRow="中央空调_N"  pCol="区域分类_2"  value="4587636.42782647" />
+			<PCovCell  pRow="中央空调_N"  pCol="区域分类_4"  value="3088484.5537691" />
+			<PCovCell  pRow="中央空调_N"  pCol="区域分类_5"  value="-879452.738995315" />
+			<PCovCell  pRow="中央空调_N"  pCol="地块配置_2"  value="-3676.50626546819" />
+			<PCovCell  pRow="中央空调_N"  pCol="建筑类型_4"  value="-2687126.47670123" />
+			<PCovCell  pRow="中央空调_N"  pCol="建筑类型_5"  value="-1456165.02961919" />
+			<PCovCell  pRow="中央空调_N"  pCol="房屋风格_4"  value="665296.540894597" />
+			<PCovCell  pRow="中央空调_N"  pCol="房屋风格_5"  value="6379102.33935732" />
+			<PCovCell  pRow="中央空调_N"  pCol="房屋风格_6"  value="446879.056754635" />
+			<PCovCell  pRow="中央空调_N"  pCol="房屋风格_7"  value="-1026482.14491993" />
+			<PCovCell  pRow="中央空调_N"  pCol="屋顶样式_4"  value="220142.269746732" />
+			<PCovCell  pRow="中央空调_N"  pCol="屋顶材料_2"  value="-26082.8108486856" />
+			<PCovCell  pRow="中央空调_N"  pCol="供暖系统_3"  value="8135602.48741727" />
+			<PCovCell  pRow="中央空调_N"  pCol="功能性_2"  value="-1741517.81791435" />
+			<PCovCell  pRow="中央空调_N"  pCol="销售类型_7"  value="-166401.951438326" />
+			<PCovCell  pRow="中央空调_N"  pCol="销售条件_3"  value="-2093506.73784954" />
+			<PCovCell  pRow="中央空调_N"  pCol="销售条件_5"  value="-23830.9701899464" />
+			<PCovCell  pRow="中央空调_N"  pCol="环境条件_1_3"  value="-6725054.75738897" />
+			<PCovCell  pRow="中央空调_N"  pCol="环境条件_1_5"  value="-724841.184314391" />
+			<PCovCell  pRow="中央空调_N"  pCol="环境条件_1_12"  value="252604.881044105" />
+			<PCovCell  pRow="中央空调_N"  pCol="环境条件_1_16"  value="-1105483.26326161" />
+			<PCovCell  pRow="中央空调_N"  pCol="外墙材料_1_7"  value="426995.324269682" />
+			<PCovCell  pRow="中央空调_N"  pCol="外墙材料_1_8"  value="151867.082435625" />
+			<PCovCell  pRow="中央空调_N"  pCol="外墙材料_1_12"  value="-2136800.74647462" />
+			<PCovCell  pRow="中央空调_N"  pCol="外墙材料_1_15"  value="-185856.863399356" />
+			<PCovCell  pRow="中央空调_N"  pCol="外墙材料_1_17"  value="456317.498805997" />
+			<PCovCell  pRow="中央空调_N"  pCol="外墙材料_1_35"  value="-717658.248004666" />
+			<PCovCell  pRow="中央空调_N"  pCol="外墙材料_1_49"  value="-558443.560174444" />
+			<PCovCell  pRow="中央空调_N"  pCol="外墙材料_1_55"  value="-1063490.84924309" />
+			<PCovCell  pRow="中央空调_N"  pCol="地下室装修类型_1_4"  value="-856759.098140982" />
+			<PCovCell  pRow="中央空调_N"  pCol="地下室装修类型_1_12"  value="341026.381416128" />
+			<PCovCell  pRow="中央空调_N"  pCol="地下室装修类型_1_16"  value="70788.1251653421" />
+			<PCovCell  pRow="中央空调_N"  pCol="地下室装修类型_1_17"  value="884652.114105721" />
+			<PCovCell  pRow="中央空调_N"  pCol="地下室装修类型_1_27"  value="3946618.99047854" />
+			<PCovCell  pRow="中央空调_N"  pCol="外部质量_N"  value="200483.942636206" />
+			<PCovCell  pRow="中央空调_N"  pCol="地下室质量_N"  value="92894.4516963709" />
+			<PCovCell  pRow="中央空调_N"  pCol="地下室采光_N"  value="28392.9367266386" />
+			<PCovCell  pRow="中央空调_N"  pCol="中央空调_N"  value="16324633.4217347" />
+			<PCovCell  pRow="中央空调_N"  pCol="(Constant)"  value="-9256891.50894396" />
+			<PCovCell  pRow="厨房质量_N"  pCol="房屋分类_5"  value="163220.377913455" />
+			<PCovCell  pRow="厨房质量_N"  pCol="区域分类_2"  value="-177940.377059952" />
+			<PCovCell  pRow="厨房质量_N"  pCol="区域分类_4"  value="76205.1232477614" />
+			<PCovCell  pRow="厨房质量_N"  pCol="区域分类_5"  value="-57973.8698117712" />
+			<PCovCell  pRow="厨房质量_N"  pCol="地块配置_2"  value="119171.549132599" />
+			<PCovCell  pRow="厨房质量_N"  pCol="建筑类型_4"  value="-62055.4063932328" />
+			<PCovCell  pRow="厨房质量_N"  pCol="建筑类型_5"  value="-33233.3118142374" />
+			<PCovCell  pRow="厨房质量_N"  pCol="房屋风格_4"  value="516019.094330403" />
+			<PCovCell  pRow="厨房质量_N"  pCol="房屋风格_5"  value="190043.388523803" />
+			<PCovCell  pRow="厨房质量_N"  pCol="房屋风格_6"  value="127072.833487431" />
+			<PCovCell  pRow="厨房质量_N"  pCol="房屋风格_7"  value="-28396.2186397975" />
+			<PCovCell  pRow="厨房质量_N"  pCol="屋顶样式_4"  value="134463.89691621" />
+			<PCovCell  pRow="厨房质量_N"  pCol="屋顶材料_2"  value="-159493.609207668" />
+			<PCovCell  pRow="厨房质量_N"  pCol="供暖系统_3"  value="464087.653944545" />
+			<PCovCell  pRow="厨房质量_N"  pCol="功能性_2"  value="-45644.1886854256" />
+			<PCovCell  pRow="厨房质量_N"  pCol="销售类型_7"  value="2131.87937216858" />
+			<PCovCell  pRow="厨房质量_N"  pCol="销售条件_3"  value="663847.44250835" />
+			<PCovCell  pRow="厨房质量_N"  pCol="销售条件_5"  value="223238.695534149" />
+			<PCovCell  pRow="厨房质量_N"  pCol="环境条件_1_3"  value="1771996.00317143" />
+			<PCovCell  pRow="厨房质量_N"  pCol="环境条件_1_5"  value="-13505.0973772189" />
+			<PCovCell  pRow="厨房质量_N"  pCol="环境条件_1_12"  value="543198.68088781" />
+			<PCovCell  pRow="厨房质量_N"  pCol="环境条件_1_16"  value="-230028.141419823" />
+			<PCovCell  pRow="厨房质量_N"  pCol="外墙材料_1_7"  value="-579296.521845332" />
+			<PCovCell  pRow="厨房质量_N"  pCol="外墙材料_1_8"  value="-222984.304101095" />
+			<PCovCell  pRow="厨房质量_N"  pCol="外墙材料_1_12"  value="297142.981493728" />
+			<PCovCell  pRow="厨房质量_N"  pCol="外墙材料_1_15"  value="-272944.193852527" />
+			<PCovCell  pRow="厨房质量_N"  pCol="外墙材料_1_17"  value="-833499.479137284" />
+			<PCovCell  pRow="厨房质量_N"  pCol="外墙材料_1_35"  value="126671.693047652" />
+			<PCovCell  pRow="厨房质量_N"  pCol="外墙材料_1_49"  value="-138629.320354013" />
+			<PCovCell  pRow="厨房质量_N"  pCol="外墙材料_1_55"  value="-724061.879921036" />
+			<PCovCell  pRow="厨房质量_N"  pCol="地下室装修类型_1_4"  value="35292.9329033278" />
+			<PCovCell  pRow="厨房质量_N"  pCol="地下室装修类型_1_12"  value="-119231.542170343" />
+			<PCovCell  pRow="厨房质量_N"  pCol="地下室装修类型_1_16"  value="-200532.866379172" />
+			<PCovCell  pRow="厨房质量_N"  pCol="地下室装修类型_1_17"  value="-105880.104340753" />
+			<PCovCell  pRow="厨房质量_N"  pCol="地下室装修类型_1_27"  value="-233078.498099059" />
+			<PCovCell  pRow="厨房质量_N"  pCol="外部质量_N"  value="-425443.755126856" />
+			<PCovCell  pRow="厨房质量_N"  pCol="地下室质量_N"  value="-39343.7840670675" />
+			<PCovCell  pRow="厨房质量_N"  pCol="地下室采光_N"  value="5524.80165737772" />
+			<PCovCell  pRow="厨房质量_N"  pCol="中央空调_N"  value="-197061.648351219" />
+			<PCovCell  pRow="厨房质量_N"  pCol="厨房质量_N"  value="978566.079486242" />
+			<PCovCell  pRow="厨房质量_N"  pCol="(Constant)"  value="-805958.589223719" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="房屋分类_5"  value="99780.6280597926" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="区域分类_2"  value="-191795.207799947" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="区域分类_4"  value="-38891.0303736739" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="区域分类_5"  value="-88810.826447053" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="地块配置_2"  value="5578.42129597847" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="建筑类型_4"  value="215640.41432697" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="建筑类型_5"  value="-129901.865426433" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="房屋风格_4"  value="56736.8690366949" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="房屋风格_5"  value="60936.6721970215" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="房屋风格_6"  value="-73979.0863341795" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="房屋风格_7"  value="58593.4397890628" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="屋顶样式_4"  value="-19384.5449285342" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="屋顶材料_2"  value="-62554.3423585223" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="供暖系统_3"  value="65129.3108175342" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="功能性_2"  value="33840.4840442636" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="销售类型_7"  value="-16483.9188609503" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="销售条件_3"  value="137524.940168618" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="销售条件_5"  value="-9839.65621047823" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="环境条件_1_3"  value="399228.438063144" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="环境条件_1_5"  value="48937.7356083926" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="环境条件_1_12"  value="163387.834167377" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="环境条件_1_16"  value="-32834.8422456546" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="外墙材料_1_7"  value="-205855.705803865" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="外墙材料_1_8"  value="-172220.712178524" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="外墙材料_1_12"  value="33150.6302534663" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="外墙材料_1_15"  value="-89025.5591051313" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="外墙材料_1_17"  value="1620.97951216374" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="外墙材料_1_35"  value="-699.494434540363" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="外墙材料_1_49"  value="-93872.3589636376" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="外墙材料_1_55"  value="149264.817841043" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="地下室装修类型_1_4"  value="-16563.3937124915" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="地下室装修类型_1_12"  value="37333.3352252921" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="地下室装修类型_1_16"  value="-720.67275037839" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="地下室装修类型_1_17"  value="43506.9111362625" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="地下室装修类型_1_27"  value="33624.5848272662" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="外部质量_N"  value="-31884.0561337111" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="地下室质量_N"  value="-31911.2755293387" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="地下室采光_N"  value="518.291500855065" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="中央空调_N"  value="-151042.752855252" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="厨房质量_N"  value="3669.5647312943" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="车库装修情况_N"  value="142038.614254104" />
+			<PCovCell  pRow="车库装修情况_N"  pCol="(Constant)"  value="130980.348083508" />
+			<PCovCell  pRow="占地面积"  pCol="房屋分类_5"  value="2.02968851296827" />
+			<PCovCell  pRow="占地面积"  pCol="区域分类_2"  value="-5.54378888971922" />
+			<PCovCell  pRow="占地面积"  pCol="区域分类_4"  value="-6.39204795326375" />
+			<PCovCell  pRow="占地面积"  pCol="区域分类_5"  value="-10.4149170489554" />
+			<PCovCell  pRow="占地面积"  pCol="地块配置_2"  value="-42.747572393979" />
+			<PCovCell  pRow="占地面积"  pCol="建筑类型_4"  value="40.893006098449" />
+			<PCovCell  pRow="占地面积"  pCol="建筑类型_5"  value="47.2366850338433" />
+			<PCovCell  pRow="占地面积"  pCol="房屋风格_4"  value="17.6562497671315" />
+			<PCovCell  pRow="占地面积"  pCol="房屋风格_5"  value="27.4603307701892" />
+			<PCovCell  pRow="占地面积"  pCol="房屋风格_6"  value="12.7780719341915" />
+			<PCovCell  pRow="占地面积"  pCol="房屋风格_7"  value="12.5635830427929" />
+			<PCovCell  pRow="占地面积"  pCol="屋顶样式_4"  value="2.47834180858978" />
+			<PCovCell  pRow="占地面积"  pCol="屋顶材料_2"  value="51.1691033720174" />
+			<PCovCell  pRow="占地面积"  pCol="供暖系统_3"  value="-98.9399644492586" />
+			<PCovCell  pRow="占地面积"  pCol="功能性_2"  value="22.7620345435722" />
+			<PCovCell  pRow="占地面积"  pCol="销售类型_7"  value="-9.30390491781688" />
+			<PCovCell  pRow="占地面积"  pCol="销售条件_3"  value="8.42440762564678" />
+			<PCovCell  pRow="占地面积"  pCol="销售条件_5"  value="-3.06973138966891" />
+			<PCovCell  pRow="占地面积"  pCol="环境条件_1_3"  value="-53.3584616685642" />
+			<PCovCell  pRow="占地面积"  pCol="环境条件_1_5"  value="9.83500498355766" />
+			<PCovCell  pRow="占地面积"  pCol="环境条件_1_12"  value="-74.828052567758" />
+			<PCovCell  pRow="占地面积"  pCol="环境条件_1_16"  value="24.4254153153596" />
+			<PCovCell  pRow="占地面积"  pCol="外墙材料_1_7"  value="-56.63481295642" />
+			<PCovCell  pRow="占地面积"  pCol="外墙材料_1_8"  value="-15.6221074393035" />
+			<PCovCell  pRow="占地面积"  pCol="外墙材料_1_12"  value="27.6781694246527" />
+			<PCovCell  pRow="占地面积"  pCol="外墙材料_1_15"  value="5.36109030913971" />
+			<PCovCell  pRow="占地面积"  pCol="外墙材料_1_17"  value="-256.066743077053" />
+			<PCovCell  pRow="占地面积"  pCol="外墙材料_1_35"  value="-18.8463072805899" />
+			<PCovCell  pRow="占地面积"  pCol="外墙材料_1_49"  value="2.2161999564292" />
+			<PCovCell  pRow="占地面积"  pCol="外墙材料_1_55"  value="42.541736640956" />
+			<PCovCell  pRow="占地面积"  pCol="地下室装修类型_1_4"  value="-59.2442460701189" />
+			<PCovCell  pRow="占地面积"  pCol="地下室装修类型_1_12"  value="15.1760978110564" />
+			<PCovCell  pRow="占地面积"  pCol="地下室装修类型_1_16"  value="11.6485786047074" />
+			<PCovCell  pRow="占地面积"  pCol="地下室装修类型_1_17"  value="-0.867289493913367" />
+			<PCovCell  pRow="占地面积"  pCol="地下室装修类型_1_27"  value="9.39560189760604" />
+			<PCovCell  pRow="占地面积"  pCol="外部质量_N"  value="1.54305576696416" />
+			<PCovCell  pRow="占地面积"  pCol="地下室质量_N"  value="-2.68916731788412" />
+			<PCovCell  pRow="占地面积"  pCol="地下室采光_N"  value="-4.68646237177291" />
+			<PCovCell  pRow="占地面积"  pCol="中央空调_N"  value="-10.9177806031951" />
+			<PCovCell  pRow="占地面积"  pCol="厨房质量_N"  value="0.694461322391251" />
+			<PCovCell  pRow="占地面积"  pCol="车库装修情况_N"  value="-0.465200770414663" />
+			<PCovCell  pRow="占地面积"  pCol="占地面积"  value="0.00906055905731037" />
+			<PCovCell  pRow="占地面积"  pCol="(Constant)"  value="-88.5545524176171" />
+			<PCovCell  pRow="总体质量"  pCol="房屋分类_5"  value="183010.149145988" />
+			<PCovCell  pRow="总体质量"  pCol="区域分类_2"  value="1258048.84686319" />
+			<PCovCell  pRow="总体质量"  pCol="区域分类_4"  value="-307161.649584182" />
+			<PCovCell  pRow="总体质量"  pCol="区域分类_5"  value="112126.839694357" />
+			<PCovCell  pRow="总体质量"  pCol="地块配置_2"  value="-24593.5270139947" />
+			<PCovCell  pRow="总体质量"  pCol="建筑类型_4"  value="-251103.664792132" />
+			<PCovCell  pRow="总体质量"  pCol="建筑类型_5"  value="-110030.695994389" />
+			<PCovCell  pRow="总体质量"  pCol="房屋风格_4"  value="619729.422687227" />
+			<PCovCell  pRow="总体质量"  pCol="房屋风格_5"  value="-1038507.73947676" />
+			<PCovCell  pRow="总体质量"  pCol="房屋风格_6"  value="95221.9737316843" />
+			<PCovCell  pRow="总体质量"  pCol="房屋风格_7"  value="257488.301001695" />
+			<PCovCell  pRow="总体质量"  pCol="屋顶样式_4"  value="-269566.325040939" />
+			<PCovCell  pRow="总体质量"  pCol="屋顶材料_2"  value="169404.552190872" />
+			<PCovCell  pRow="总体质量"  pCol="供暖系统_3"  value="-32903.5174359747" />
+			<PCovCell  pRow="总体质量"  pCol="功能性_2"  value="-16586.6518483753" />
+			<PCovCell  pRow="总体质量"  pCol="销售类型_7"  value="-10812.0653846611" />
+			<PCovCell  pRow="总体质量"  pCol="销售条件_3"  value="-181154.803363656" />
+			<PCovCell  pRow="总体质量"  pCol="销售条件_5"  value="35791.8416962083" />
+			<PCovCell  pRow="总体质量"  pCol="环境条件_1_3"  value="-1392567.34158678" />
+			<PCovCell  pRow="总体质量"  pCol="环境条件_1_5"  value="194869.781438115" />
+			<PCovCell  pRow="总体质量"  pCol="环境条件_1_12"  value="-625302.322113429" />
+			<PCovCell  pRow="总体质量"  pCol="环境条件_1_16"  value="545764.188378711" />
+			<PCovCell  pRow="总体质量"  pCol="外墙材料_1_7"  value="-140696.565876053" />
+			<PCovCell  pRow="总体质量"  pCol="外墙材料_1_8"  value="217393.564249769" />
+			<PCovCell  pRow="总体质量"  pCol="外墙材料_1_12"  value="290792.560113481" />
+			<PCovCell  pRow="总体质量"  pCol="外墙材料_1_15"  value="218759.049080847" />
+			<PCovCell  pRow="总体质量"  pCol="外墙材料_1_17"  value="1285259.94371632" />
+			<PCovCell  pRow="总体质量"  pCol="外墙材料_1_35"  value="74621.6987387362" />
+			<PCovCell  pRow="总体质量"  pCol="外墙材料_1_49"  value="21740.6183253587" />
+			<PCovCell  pRow="总体质量"  pCol="外墙材料_1_55"  value="630300.877211563" />
+			<PCovCell  pRow="总体质量"  pCol="地下室装修类型_1_4"  value="214966.388256702" />
+			<PCovCell  pRow="总体质量"  pCol="地下室装修类型_1_12"  value="13794.5065453382" />
+			<PCovCell  pRow="总体质量"  pCol="地下室装修类型_1_16"  value="-369743.415879828" />
+			<PCovCell  pRow="总体质量"  pCol="地下室装修类型_1_17"  value="1001772.61465028" />
+			<PCovCell  pRow="总体质量"  pCol="地下室装修类型_1_27"  value="1312500.35904567" />
+			<PCovCell  pRow="总体质量"  pCol="外部质量_N"  value="-375671.470641886" />
+			<PCovCell  pRow="总体质量"  pCol="地下室质量_N"  value="-261488.64299822" />
+			<PCovCell  pRow="总体质量"  pCol="地下室采光_N"  value="-19368.4199005521" />
+			<PCovCell  pRow="总体质量"  pCol="中央空调_N"  value="-311952.594884412" />
+			<PCovCell  pRow="总体质量"  pCol="厨房质量_N"  value="-178909.255439737" />
+			<PCovCell  pRow="总体质量"  pCol="车库装修情况_N"  value="-31184.7327689538" />
+			<PCovCell  pRow="总体质量"  pCol="占地面积"  value="6.46284438378884" />
+			<PCovCell  pRow="总体质量"  pCol="总体质量"  value="1353390.06958022" />
+			<PCovCell  pRow="总体质量"  pCol="(Constant)"  value="-1371843.10108181" />
+			<PCovCell  pRow="总体状况"  pCol="房屋分类_5"  value="-163264.207212961" />
+			<PCovCell  pRow="总体状况"  pCol="区域分类_2"  value="632080.686405804" />
+			<PCovCell  pRow="总体状况"  pCol="区域分类_4"  value="72852.3095858994" />
+			<PCovCell  pRow="总体状况"  pCol="区域分类_5"  value="192246.278089084" />
+			<PCovCell  pRow="总体状况"  pCol="地块配置_2"  value="-98440.8823519725" />
+			<PCovCell  pRow="总体状况"  pCol="建筑类型_4"  value="441056.584420156" />
+			<PCovCell  pRow="总体状况"  pCol="建筑类型_5"  value="428535.101563917" />
+			<PCovCell  pRow="总体状况"  pCol="房屋风格_4"  value="-938141.015654941" />
+			<PCovCell  pRow="总体状况"  pCol="房屋风格_5"  value="-277599.024386979" />
+			<PCovCell  pRow="总体状况"  pCol="房屋风格_6"  value="-126776.880106514" />
+			<PCovCell  pRow="总体状况"  pCol="房屋风格_7"  value="-204185.762220604" />
+			<PCovCell  pRow="总体状况"  pCol="屋顶样式_4"  value="-24829.766419413" />
+			<PCovCell  pRow="总体状况"  pCol="屋顶材料_2"  value="65322.8000074267" />
+			<PCovCell  pRow="总体状况"  pCol="供暖系统_3"  value="-192778.310242213" />
+			<PCovCell  pRow="总体状况"  pCol="功能性_2"  value="1438457.1815554" />
+			<PCovCell  pRow="总体状况"  pCol="销售类型_7"  value="-40245.4080396657" />
+			<PCovCell  pRow="总体状况"  pCol="销售条件_3"  value="-172777.951946472" />
+			<PCovCell  pRow="总体状况"  pCol="销售条件_5"  value="-267319.310796548" />
+			<PCovCell  pRow="总体状况"  pCol="环境条件_1_3"  value="-1529834.18819128" />
+			<PCovCell  pRow="总体状况"  pCol="环境条件_1_5"  value="-57840.7587486689" />
+			<PCovCell  pRow="总体状况"  pCol="环境条件_1_12"  value="76581.8557500463" />
+			<PCovCell  pRow="总体状况"  pCol="环境条件_1_16"  value="-90281.1245939575" />
+			<PCovCell  pRow="总体状况"  pCol="外墙材料_1_7"  value="230531.494575414" />
+			<PCovCell  pRow="总体状况"  pCol="外墙材料_1_8"  value="-643667.717809698" />
+			<PCovCell  pRow="总体状况"  pCol="外墙材料_1_12"  value="-50275.8897850504" />
+			<PCovCell  pRow="总体状况"  pCol="外墙材料_1_15"  value="-16082.9738579622" />
+			<PCovCell  pRow="总体状况"  pCol="外墙材料_1_17"  value="959769.99740478" />
+			<PCovCell  pRow="总体状况"  pCol="外墙材料_1_35"  value="-4737.32136040542" />
+			<PCovCell  pRow="总体状况"  pCol="外墙材料_1_49"  value="182042.071640263" />
+			<PCovCell  pRow="总体状况"  pCol="外墙材料_1_55"  value="526853.562845705" />
+			<PCovCell  pRow="总体状况"  pCol="地下室装修类型_1_4"  value="118793.160976878" />
+			<PCovCell  pRow="总体状况"  pCol="地下室装修类型_1_12"  value="-609964.107590211" />
+			<PCovCell  pRow="总体状况"  pCol="地下室装修类型_1_16"  value="202946.816165339" />
+			<PCovCell  pRow="总体状况"  pCol="地下室装修类型_1_17"  value="66520.134354928" />
+			<PCovCell  pRow="总体状况"  pCol="地下室装修类型_1_27"  value="133162.758319549" />
+			<PCovCell  pRow="总体状况"  pCol="外部质量_N"  value="11412.4892403569" />
+			<PCovCell  pRow="总体状况"  pCol="地下室质量_N"  value="148647.248761233" />
+			<PCovCell  pRow="总体状况"  pCol="地下室采光_N"  value="-4246.97824058254" />
+			<PCovCell  pRow="总体状况"  pCol="中央空调_N"  value="-534072.755280805" />
+			<PCovCell  pRow="总体状况"  pCol="厨房质量_N"  value="-139646.172133875" />
+			<PCovCell  pRow="总体状况"  pCol="车库装修情况_N"  value="16117.380380943" />
+			<PCovCell  pRow="总体状况"  pCol="占地面积"  value="0.385262140259146" />
+			<PCovCell  pRow="总体状况"  pCol="总体质量"  value="-75674.4254939834" />
+			<PCovCell  pRow="总体状况"  pCol="总体状况"  value="717220.385013408" />
+			<PCovCell  pRow="总体状况"  pCol="(Constant)"  value="-4061479.7841494" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="房屋分类_5"  value="1226.41760942376" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="区域分类_2"  value="211.022347697705" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="区域分类_4"  value="-870.209115125458" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="区域分类_5"  value="-452.304553683153" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="地块配置_2"  value="-147.808204081904" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="建筑类型_4"  value="-308.952322628182" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="建筑类型_5"  value="508.921116349215" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="房屋风格_4"  value="3431.23013370873" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="房屋风格_5"  value="1165.95852293736" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="房屋风格_6"  value="1274.13943267163" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="房屋风格_7"  value="-679.508893823835" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="屋顶样式_4"  value="-717.304381369991" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="屋顶材料_2"  value="-398.671448378478" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="供暖系统_3"  value="-817.099179199992" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="功能性_2"  value="1660.55875457906" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="销售类型_7"  value="282.568683517242" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="销售条件_3"  value="314.897308705981" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="销售条件_5"  value="152.173954984583" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="环境条件_1_3"  value="1559.90777368095" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="环境条件_1_5"  value="-592.473418464082" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="环境条件_1_12"  value="-3515.38855683236" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="环境条件_1_16"  value="487.374169153586" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="外墙材料_1_7"  value="188.572999157733" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="外墙材料_1_8"  value="-288.397695683006" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="外墙材料_1_12"  value="203.18257089977" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="外墙材料_1_15"  value="-94.0261332842142" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="外墙材料_1_17"  value="-3222.83469271422" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="外墙材料_1_35"  value="-235.082065568041" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="外墙材料_1_49"  value="789.530092693144" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="外墙材料_1_55"  value="-928.579734439381" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="地下室装修类型_1_4"  value="588.867699386181" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="地下室装修类型_1_12"  value="-2249.35457713887" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="地下室装修类型_1_16"  value="-2877.82756132283" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="地下室装修类型_1_17"  value="2648.05408302147" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="地下室装修类型_1_27"  value="2181.90448526599" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="外部质量_N"  value="123.264765489561" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="地下室质量_N"  value="-106.217077486996" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="地下室采光_N"  value="-104.996624911408" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="中央空调_N"  value="-506.074885316936" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="厨房质量_N"  value="-2.45576825633398" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="车库装修情况_N"  value="-45.4007798359345" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="占地面积"  value="-0.0185053423420468" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="总体质量"  value="305.299755112295" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="总体状况"  value="-70.9768921726996" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="地下室装修面积1"  value="6.09879990826786" />
+			<PCovCell  pRow="地下室装修面积1"  pCol="(Constant)"  value="-1172.31368447235" />
+			<PCovCell  pRow="地面居住面积"  pCol="房屋分类_5"  value="-3564.43968650474" />
+			<PCovCell  pRow="地面居住面积"  pCol="区域分类_2"  value="109.007578147069" />
+			<PCovCell  pRow="地面居住面积"  pCol="区域分类_4"  value="-286.233271599289" />
+			<PCovCell  pRow="地面居住面积"  pCol="区域分类_5"  value="213.204215524587" />
+			<PCovCell  pRow="地面居住面积"  pCol="地块配置_2"  value="-312.338552854098" />
+			<PCovCell  pRow="地面居住面积"  pCol="建筑类型_4"  value="810.983200808692" />
+			<PCovCell  pRow="地面居住面积"  pCol="建筑类型_5"  value="-148.887382533513" />
+			<PCovCell  pRow="地面居住面积"  pCol="房屋风格_4"  value="-10985.1432616912" />
+			<PCovCell  pRow="地面居住面积"  pCol="房屋风格_5"  value="-1888.92011869263" />
+			<PCovCell  pRow="地面居住面积"  pCol="房屋风格_6"  value="-3604.13833106506" />
+			<PCovCell  pRow="地面居住面积"  pCol="房屋风格_7"  value="1296.53183119062" />
+			<PCovCell  pRow="地面居住面积"  pCol="屋顶样式_4"  value="-357.113892078927" />
+			<PCovCell  pRow="地面居住面积"  pCol="屋顶材料_2"  value="4355.86448790158" />
+			<PCovCell  pRow="地面居住面积"  pCol="供暖系统_3"  value="-1665.26012945144" />
+			<PCovCell  pRow="地面居住面积"  pCol="功能性_2"  value="-1716.59068443996" />
+			<PCovCell  pRow="地面居住面积"  pCol="销售类型_7"  value="587.143491639391" />
+			<PCovCell  pRow="地面居住面积"  pCol="销售条件_3"  value="-504.892355242666" />
+			<PCovCell  pRow="地面居住面积"  pCol="销售条件_5"  value="238.501438816354" />
+			<PCovCell  pRow="地面居住面积"  pCol="环境条件_1_3"  value="-8989.10108159659" />
+			<PCovCell  pRow="地面居住面积"  pCol="环境条件_1_5"  value="-293.081406688304" />
+			<PCovCell  pRow="地面居住面积"  pCol="环境条件_1_12"  value="-12003.2389686826" />
+			<PCovCell  pRow="地面居住面积"  pCol="环境条件_1_16"  value="503.982892989507" />
+			<PCovCell  pRow="地面居住面积"  pCol="外墙材料_1_7"  value="-703.885826445524" />
+			<PCovCell  pRow="地面居住面积"  pCol="外墙材料_1_8"  value="-2754.26451863543" />
+			<PCovCell  pRow="地面居住面积"  pCol="外墙材料_1_12"  value="-3107.71940714634" />
+			<PCovCell  pRow="地面居住面积"  pCol="外墙材料_1_15"  value="237.454160561277" />
+			<PCovCell  pRow="地面居住面积"  pCol="外墙材料_1_17"  value="-870.079235220897" />
+			<PCovCell  pRow="地面居住面积"  pCol="外墙材料_1_35"  value="-386.782710322088" />
+			<PCovCell  pRow="地面居住面积"  pCol="外墙材料_1_49"  value="436.799894069411" />
+			<PCovCell  pRow="地面居住面积"  pCol="外墙材料_1_55"  value="-8597.4160705572" />
+			<PCovCell  pRow="地面居住面积"  pCol="地下室装修类型_1_4"  value="-1441.65871544226" />
+			<PCovCell  pRow="地面居住面积"  pCol="地下室装修类型_1_12"  value="814.874755710162" />
+			<PCovCell  pRow="地面居住面积"  pCol="地下室装修类型_1_16"  value="424.315204699888" />
+			<PCovCell  pRow="地面居住面积"  pCol="地下室装修类型_1_17"  value="-772.78514868391" />
+			<PCovCell  pRow="地面居住面积"  pCol="地下室装修类型_1_27"  value="-398.457122790644" />
+			<PCovCell  pRow="地面居住面积"  pCol="外部质量_N"  value="-281.181445407394" />
+			<PCovCell  pRow="地面居住面积"  pCol="地下室质量_N"  value="-226.701642002081" />
+			<PCovCell  pRow="地面居住面积"  pCol="地下室采光_N"  value="-83.9463246487689" />
+			<PCovCell  pRow="地面居住面积"  pCol="中央空调_N"  value="642.044082622409" />
+			<PCovCell  pRow="地面居住面积"  pCol="厨房质量_N"  value="-306.18748324793" />
+			<PCovCell  pRow="地面居住面积"  pCol="车库装修情况_N"  value="12.7171958823999" />
+			<PCovCell  pRow="地面居住面积"  pCol="占地面积"  value="-0.0330033754242401" />
+			<PCovCell  pRow="地面居住面积"  pCol="总体质量"  value="-946.972365990278" />
+			<PCovCell  pRow="地面居住面积"  pCol="总体状况"  value="173.148479054457" />
+			<PCovCell  pRow="地面居住面积"  pCol="地下室装修面积1"  value="-1.99815851629953" />
+			<PCovCell  pRow="地面居住面积"  pCol="地面居住面积"  value="15.1489903024419" />
+			<PCovCell  pRow="地面居住面积"  pCol="(Constant)"  value="4348.70656336497" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="房屋分类_5"  value="148600.061822404" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="区域分类_2"  value="1151922.60580266" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="区域分类_4"  value="-714367.57939072" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="区域分类_5"  value="-357432.235152102" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="地块配置_2"  value="54946.4501013918" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="建筑类型_4"  value="848993.401231523" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="建筑类型_5"  value="935290.118251662" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="房屋风格_4"  value="-316374.140654812" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="房屋风格_5"  value="233197.310234767" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="房屋风格_6"  value="-350090.99658454" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="房屋风格_7"  value="508981.554995418" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="屋顶样式_4"  value="152729.327625359" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="屋顶材料_2"  value="-1017654.73770356" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="供暖系统_3"  value="-928250.871580678" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="功能性_2"  value="1305005.8090385" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="销售类型_7"  value="554511.613918151" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="销售条件_3"  value="320213.60086135" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="销售条件_5"  value="91936.7354233991" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="环境条件_1_3"  value="1405609.39387979" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="环境条件_1_5"  value="-102800.559708445" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="环境条件_1_12"  value="2145139.67912647" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="环境条件_1_16"  value="463411.106164361" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="外墙材料_1_7"  value="-256845.554764151" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="外墙材料_1_8"  value="-274865.246004054" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="外墙材料_1_12"  value="-106780.353967535" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="外墙材料_1_15"  value="-310910.090951854" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="外墙材料_1_17"  value="1386504.22523793" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="外墙材料_1_35"  value="14504.8550307394" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="外墙材料_1_49"  value="55244.203568573" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="外墙材料_1_55"  value="564595.607891355" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="地下室装修类型_1_4"  value="-13754.5452182726" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="地下室装修类型_1_12"  value="1271882.25763514" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="地下室装修类型_1_16"  value="219488.151875777" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="地下室装修类型_1_17"  value="443873.182977121" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="地下室装修类型_1_27"  value="323157.081329078" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="外部质量_N"  value="97108.6408266008" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="地下室质量_N"  value="50561.3292703975" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="地下室采光_N"  value="4446.04194610485" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="中央空调_N"  value="-681388.007369028" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="厨房质量_N"  value="131233.014181982" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="车库装修情况_N"  value="37078.1857501707" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="占地面积"  value="1.25377443088486" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="总体质量"  value="30121.9822120674" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="总体状况"  value="51705.1787608755" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="地下室装修面积1"  value="244.871690241742" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="地面居住面积"  value="-646.959264723267" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="地面以上卧室数量"  value="2471769.06593047" />
+			<PCovCell  pRow="地面以上卧室数量"  pCol="(Constant)"  value="-2729591.57203254" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="房屋分类_5"  value="2672009.73777918" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="区域分类_2"  value="2550466.61059042" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="区域分类_4"  value="-2231460.03400961" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="区域分类_5"  value="1001241.00935047" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="地块配置_2"  value="486254.053853148" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="建筑类型_4"  value="-296800.120219556" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="建筑类型_5"  value="-1423784.05854822" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="房屋风格_4"  value="5852856.04274874" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="房屋风格_5"  value="-2721408.45192699" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="房屋风格_6"  value="1755533.13772145" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="房屋风格_7"  value="-1286148.23358084" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="屋顶样式_4"  value="704834.913088603" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="屋顶材料_2"  value="-2087048.5549279" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="供暖系统_3"  value="1477409.44726771" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="功能性_2"  value="988585.584369658" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="销售类型_7"  value="21568.5326678982" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="销售条件_3"  value="-6194215.0540009" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="销售条件_5"  value="100062.541777501" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="环境条件_1_3"  value="7253487.29553799" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="环境条件_1_5"  value="-709387.345049859" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="环境条件_1_12"  value="278614.138110887" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="环境条件_1_16"  value="-255855.264208245" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="外墙材料_1_7"  value="-783361.75611569" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="外墙材料_1_8"  value="1911095.32842183" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="外墙材料_1_12"  value="2789210.10797015" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="外墙材料_1_15"  value="1072748.72147468" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="外墙材料_1_17"  value="4603384.28426562" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="外墙材料_1_35"  value="-1024015.45975477" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="外墙材料_1_49"  value="63128.3812338333" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="外墙材料_1_55"  value="1812728.35744869" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="地下室装修类型_1_4"  value="-267227.151065932" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="地下室装修类型_1_12"  value="1074498.67528928" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="地下室装修类型_1_16"  value="-313920.657936802" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="地下室装修类型_1_17"  value="-2621559.31604555" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="地下室装修类型_1_27"  value="-7284061.66443744" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="外部质量_N"  value="-58005.6730394854" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="地下室质量_N"  value="245111.910616743" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="地下室采光_N"  value="-37338.638318023" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="中央空调_N"  value="1905670.45592874" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="厨房质量_N"  value="272774.891824611" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="车库装修情况_N"  value="163129.078986601" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="占地面积"  value="5.32765845149921" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="总体质量"  value="609929.225242345" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="总体状况"  value="156689.484320526" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="地下室装修面积1"  value="-78.6495659927371" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="地面居住面积"  value="-1042.31773221832" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="地面以上卧室数量"  value="245632.667228865" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="地面以上厨房数量"  value="21597888.0970434" />
+			<PCovCell  pRow="地面以上厨房数量"  pCol="(Constant)"  value="-21793362.0354643" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="房屋分类_5"  value="-231302.566344138" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="区域分类_2"  value="-462510.210191966" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="区域分类_4"  value="-67624.6212520927" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="区域分类_5"  value="-212024.988554145" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="地块配置_2"  value="111255.957499761" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="建筑类型_4"  value="233035.868723759" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="建筑类型_5"  value="529593.256029808" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="房屋风格_4"  value="-964580.349396262" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="房屋风格_5"  value="-892962.313516727" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="房屋风格_6"  value="-226269.912718673" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="房屋风格_7"  value="38653.8244167302" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="屋顶样式_4"  value="-238357.818738811" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="屋顶材料_2"  value="-231517.523439159" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="供暖系统_3"  value="465233.753177756" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="功能性_2"  value="140097.138781323" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="销售类型_7"  value="-308856.092172099" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="销售条件_3"  value="-274525.883158611" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="销售条件_5"  value="16081.7871244907" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="环境条件_1_3"  value="603160.194632682" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="环境条件_1_5"  value="-2841.27454111737" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="环境条件_1_12"  value="1641553.89433911" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="环境条件_1_16"  value="22046.8790673419" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="外墙材料_1_7"  value="144576.399868733" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="外墙材料_1_8"  value="-414749.767455018" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="外墙材料_1_12"  value="270793.290695969" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="外墙材料_1_15"  value="-379416.011252273" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="外墙材料_1_17"  value="-2183482.53655631" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="外墙材料_1_35"  value="-5626.59280541912" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="外墙材料_1_49"  value="-82046.9317844461" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="外墙材料_1_55"  value="1040581.14871607" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="地下室装修类型_1_4"  value="289120.413329509" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="地下室装修类型_1_12"  value="-1126237.4638729" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="地下室装修类型_1_16"  value="-16630.5255657546" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="地下室装修类型_1_17"  value="-348989.948114712" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="地下室装修类型_1_27"  value="361631.793702381" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="外部质量_N"  value="-8310.04650936701" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="地下室质量_N"  value="22797.9743454152" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="地下室采光_N"  value="24970.7899739378" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="中央空调_N"  value="82359.924467902" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="厨房质量_N"  value="-39922.7521300463" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="车库装修情况_N"  value="-16070.0905314289" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="占地面积"  value="1.07148401688924" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="总体质量"  value="-30241.9016783973" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="总体状况"  value="-6008.95036627397" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="地下室装修面积1"  value="243.625662129102" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="地面居住面积"  value="-2290.46795338855" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="地面以上卧室数量"  value="-739231.394322294" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="地面以上厨房数量"  value="-1455246.43988817" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="地面以上房间总数"  value="1299827.5147591" />
+			<PCovCell  pRow="地面以上房间总数"  pCol="(Constant)"  value="-465021.853300919" />
+			<PCovCell  pRow="壁炉数量"  pCol="房屋分类_5"  value="78467.1873017931" />
+			<PCovCell  pRow="壁炉数量"  pCol="区域分类_2"  value="288976.367078334" />
+			<PCovCell  pRow="壁炉数量"  pCol="区域分类_4"  value="297675.630521986" />
+			<PCovCell  pRow="壁炉数量"  pCol="区域分类_5"  value="-333908.98239863" />
+			<PCovCell  pRow="壁炉数量"  pCol="地块配置_2"  value="2560.45680592545" />
+			<PCovCell  pRow="壁炉数量"  pCol="建筑类型_4"  value="206196.035468935" />
+			<PCovCell  pRow="壁炉数量"  pCol="建筑类型_5"  value="-106556.659692111" />
+			<PCovCell  pRow="壁炉数量"  pCol="房屋风格_4"  value="639830.768647436" />
+			<PCovCell  pRow="壁炉数量"  pCol="房屋风格_5"  value="-1087660.77715002" />
+			<PCovCell  pRow="壁炉数量"  pCol="房屋风格_6"  value="134590.429482598" />
+			<PCovCell  pRow="壁炉数量"  pCol="房屋风格_7"  value="3538.8574294006" />
+			<PCovCell  pRow="壁炉数量"  pCol="屋顶样式_4"  value="68295.2227292592" />
+			<PCovCell  pRow="壁炉数量"  pCol="屋顶材料_2"  value="-513483.304714165" />
+			<PCovCell  pRow="壁炉数量"  pCol="供暖系统_3"  value="386197.191996083" />
+			<PCovCell  pRow="壁炉数量"  pCol="功能性_2"  value="-33959.7658043519" />
+			<PCovCell  pRow="壁炉数量"  pCol="销售类型_7"  value="-61785.964311423" />
+			<PCovCell  pRow="壁炉数量"  pCol="销售条件_3"  value="-262975.70773865" />
+			<PCovCell  pRow="壁炉数量"  pCol="销售条件_5"  value="-231621.343299389" />
+			<PCovCell  pRow="壁炉数量"  pCol="环境条件_1_3"  value="2225294.1921684" />
+			<PCovCell  pRow="壁炉数量"  pCol="环境条件_1_5"  value="-102250.623410984" />
+			<PCovCell  pRow="壁炉数量"  pCol="环境条件_1_12"  value="2816001.53494635" />
+			<PCovCell  pRow="壁炉数量"  pCol="环境条件_1_16"  value="1908405.6286906" />
+			<PCovCell  pRow="壁炉数量"  pCol="外墙材料_1_7"  value="-490663.195852623" />
+			<PCovCell  pRow="壁炉数量"  pCol="外墙材料_1_8"  value="-271703.27624994" />
+			<PCovCell  pRow="壁炉数量"  pCol="外墙材料_1_12"  value="-442480.809146028" />
+			<PCovCell  pRow="壁炉数量"  pCol="外墙材料_1_15"  value="6731.94447283317" />
+			<PCovCell  pRow="壁炉数量"  pCol="外墙材料_1_17"  value="3674812.77469817" />
+			<PCovCell  pRow="壁炉数量"  pCol="外墙材料_1_35"  value="-461896.860620442" />
+			<PCovCell  pRow="壁炉数量"  pCol="外墙材料_1_49"  value="267207.600128528" />
+			<PCovCell  pRow="壁炉数量"  pCol="外墙材料_1_55"  value="815759.26073846" />
+			<PCovCell  pRow="壁炉数量"  pCol="地下室装修类型_1_4"  value="-656658.050460819" />
+			<PCovCell  pRow="壁炉数量"  pCol="地下室装修类型_1_12"  value="-550995.559548728" />
+			<PCovCell  pRow="壁炉数量"  pCol="地下室装修类型_1_16"  value="305367.102157677" />
+			<PCovCell  pRow="壁炉数量"  pCol="地下室装修类型_1_17"  value="-546918.547983504" />
+			<PCovCell  pRow="壁炉数量"  pCol="地下室装修类型_1_27"  value="-41368.0134612874" />
+			<PCovCell  pRow="壁炉数量"  pCol="外部质量_N"  value="37736.9703331878" />
+			<PCovCell  pRow="壁炉数量"  pCol="地下室质量_N"  value="68168.7258337283" />
+			<PCovCell  pRow="壁炉数量"  pCol="地下室采光_N"  value="-34952.0696945717" />
+			<PCovCell  pRow="壁炉数量"  pCol="中央空调_N"  value="-346054.128574945" />
+			<PCovCell  pRow="壁炉数量"  pCol="厨房质量_N"  value="33429.8238980105" />
+			<PCovCell  pRow="壁炉数量"  pCol="车库装修情况_N"  value="-47548.0436337413" />
+			<PCovCell  pRow="壁炉数量"  pCol="占地面积"  value="-15.7302679707153" />
+			<PCovCell  pRow="壁炉数量"  pCol="总体质量"  value="-219345.805148816" />
+			<PCovCell  pRow="壁炉数量"  pCol="总体状况"  value="31829.4225133064" />
+			<PCovCell  pRow="壁炉数量"  pCol="地下室装修面积1"  value="-329.409146948003" />
+			<PCovCell  pRow="壁炉数量"  pCol="地面居住面积"  value="-1268.88816516073" />
+			<PCovCell  pRow="壁炉数量"  pCol="地面以上卧室数量"  value="319440.445732634" />
+			<PCovCell  pRow="壁炉数量"  pCol="地面以上厨房数量"  value="861837.355114825" />
+			<PCovCell  pRow="壁炉数量"  pCol="地面以上房间总数"  value="-70001.3223656318" />
+			<PCovCell  pRow="壁炉数量"  pCol="壁炉数量"  value="2605618.74190485" />
+			<PCovCell  pRow="壁炉数量"  pCol="(Constant)"  value="1099631.4960411" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="房屋分类_5"  value="675959.650552951" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="区域分类_2"  value="-559216.172940499" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="区域分类_4"  value="619355.138248982" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="区域分类_5"  value="182324.895300031" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="地块配置_2"  value="-128570.958574001" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="建筑类型_4"  value="265166.62582994" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="建筑类型_5"  value="237672.269976536" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="房屋风格_4"  value="1227272.63378015" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="房屋风格_5"  value="788361.42654634" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="房屋风格_6"  value="291974.189791532" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="房屋风格_7"  value="-216781.234901509" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="屋顶样式_4"  value="1078.81383614958" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="屋顶材料_2"  value="-531047.999912076" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="供暖系统_3"  value="-1080409.49117625" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="功能性_2"  value="1054173.27509321" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="销售类型_7"  value="-492804.217330321" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="销售条件_3"  value="-758791.299390731" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="销售条件_5"  value="-298894.277520012" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="环境条件_1_3"  value="436203.361087767" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="环境条件_1_5"  value="146486.848286501" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="环境条件_1_12"  value="597166.783373069" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="环境条件_1_16"  value="33173.7706183021" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="外墙材料_1_7"  value="854761.815406833" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="外墙材料_1_8"  value="761656.824716865" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="外墙材料_1_12"  value="-170583.842953484" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="外墙材料_1_15"  value="497451.82220898" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="外墙材料_1_17"  value="725405.116131252" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="外墙材料_1_35"  value="-290337.86483505" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="外墙材料_1_49"  value="-125565.135469869" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="外墙材料_1_55"  value="135310.77842434" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="地下室装修类型_1_4"  value="175516.736105652" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="地下室装修类型_1_12"  value="222900.858988553" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="地下室装修类型_1_16"  value="35616.9932607546" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="地下室装修类型_1_17"  value="-1325.77290725569" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="地下室装修类型_1_27"  value="-369090.135949486" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="外部质量_N"  value="-41414.9742526166" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="地下室质量_N"  value="-28469.4725122333" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="地下室采光_N"  value="-2862.0061181651" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="中央空调_N"  value="-558272.201510951" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="厨房质量_N"  value="-153524.489449323" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="车库装修情况_N"  value="-150837.436742735" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="占地面积"  value="-5.08049795548909" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="总体质量"  value="-275719.811319862" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="总体状况"  value="132648.423543291" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="地下室装修面积1"  value="13.8481290408497" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="地面居住面积"  value="-652.312986455438" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="地面以上卧室数量"  value="100068.043348238" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="地面以上厨房数量"  value="-288721.78758186" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="地面以上房间总数"  value="-74573.2728806911" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="壁炉数量"  value="36915.928953685" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="车库容纳车辆数量"  value="2488835.98081397" />
+			<PCovCell  pRow="车库容纳车辆数量"  pCol="(Constant)"  value="1335285.19077038" />
+			<PCovCell  pRow="木质甲板面积"  pCol="房屋分类_5"  value="28.660188418603" />
+			<PCovCell  pRow="木质甲板面积"  pCol="区域分类_2"  value="496.546609721609" />
+			<PCovCell  pRow="木质甲板面积"  pCol="区域分类_4"  value="-1725.74768772445" />
+			<PCovCell  pRow="木质甲板面积"  pCol="区域分类_5"  value="-1290.71860246132" />
+			<PCovCell  pRow="木质甲板面积"  pCol="地块配置_2"  value="-370.768110325245" />
+			<PCovCell  pRow="木质甲板面积"  pCol="建筑类型_4"  value="190.640828291864" />
+			<PCovCell  pRow="木质甲板面积"  pCol="建筑类型_5"  value="-916.226595876196" />
+			<PCovCell  pRow="木质甲板面积"  pCol="房屋风格_4"  value="-683.04040560356" />
+			<PCovCell  pRow="木质甲板面积"  pCol="房屋风格_5"  value="2233.62761079049" />
+			<PCovCell  pRow="木质甲板面积"  pCol="房屋风格_6"  value="516.727102849108" />
+			<PCovCell  pRow="木质甲板面积"  pCol="房屋风格_7"  value="1019.87416195771" />
+			<PCovCell  pRow="木质甲板面积"  pCol="屋顶样式_4"  value="-287.939493786003" />
+			<PCovCell  pRow="木质甲板面积"  pCol="屋顶材料_2"  value="2237.95949543991" />
+			<PCovCell  pRow="木质甲板面积"  pCol="供暖系统_3"  value="2175.05538919668" />
+			<PCovCell  pRow="木质甲板面积"  pCol="功能性_2"  value="1552.21307233669" />
+			<PCovCell  pRow="木质甲板面积"  pCol="销售类型_7"  value="1461.72605556047" />
+			<PCovCell  pRow="木质甲板面积"  pCol="销售条件_3"  value="-860.988826256899" />
+			<PCovCell  pRow="木质甲板面积"  pCol="销售条件_5"  value="-612.082568687102" />
+			<PCovCell  pRow="木质甲板面积"  pCol="环境条件_1_3"  value="-1920.71859538162" />
+			<PCovCell  pRow="木质甲板面积"  pCol="环境条件_1_5"  value="86.064165218821" />
+			<PCovCell  pRow="木质甲板面积"  pCol="环境条件_1_12"  value="2911.63547764246" />
+			<PCovCell  pRow="木质甲板面积"  pCol="环境条件_1_16"  value="-6893.221394913" />
+			<PCovCell  pRow="木质甲板面积"  pCol="外墙材料_1_7"  value="2057.81747878392" />
+			<PCovCell  pRow="木质甲板面积"  pCol="外墙材料_1_8"  value="7501.08941537628" />
+			<PCovCell  pRow="木质甲板面积"  pCol="外墙材料_1_12"  value="3360.16822410068" />
+			<PCovCell  pRow="木质甲板面积"  pCol="外墙材料_1_15"  value="-1793.49790159161" />
+			<PCovCell  pRow="木质甲板面积"  pCol="外墙材料_1_17"  value="-16006.9335655363" />
+			<PCovCell  pRow="木质甲板面积"  pCol="外墙材料_1_35"  value="-1133.19099078607" />
+			<PCovCell  pRow="木质甲板面积"  pCol="外墙材料_1_49"  value="146.575454763265" />
+			<PCovCell  pRow="木质甲板面积"  pCol="外墙材料_1_55"  value="-1367.31758583117" />
+			<PCovCell  pRow="木质甲板面积"  pCol="地下室装修类型_1_4"  value="-1779.12965940633" />
+			<PCovCell  pRow="木质甲板面积"  pCol="地下室装修类型_1_12"  value="5033.08259182082" />
+			<PCovCell  pRow="木质甲板面积"  pCol="地下室装修类型_1_16"  value="86.0549385527924" />
+			<PCovCell  pRow="木质甲板面积"  pCol="地下室装修类型_1_17"  value="3925.04465363783" />
+			<PCovCell  pRow="木质甲板面积"  pCol="地下室装修类型_1_27"  value="1221.16108928934" />
+			<PCovCell  pRow="木质甲板面积"  pCol="外部质量_N"  value="62.4350239886543" />
+			<PCovCell  pRow="木质甲板面积"  pCol="地下室质量_N"  value="-706.065064183877" />
+			<PCovCell  pRow="木质甲板面积"  pCol="地下室采光_N"  value="-39.1445446941294" />
+			<PCovCell  pRow="木质甲板面积"  pCol="中央空调_N"  value="-395.916536025257" />
+			<PCovCell  pRow="木质甲板面积"  pCol="厨房质量_N"  value="-208.990933104009" />
+			<PCovCell  pRow="木质甲板面积"  pCol="车库装修情况_N"  value="-164.595263812329" />
+			<PCovCell  pRow="木质甲板面积"  pCol="占地面积"  value="-0.0404463885019431" />
+			<PCovCell  pRow="木质甲板面积"  pCol="总体质量"  value="310.680962843732" />
+			<PCovCell  pRow="木质甲板面积"  pCol="总体状况"  value="-360.308581074906" />
+			<PCovCell  pRow="木质甲板面积"  pCol="地下室装修面积1"  value="-0.735926053501839" />
+			<PCovCell  pRow="木质甲板面积"  pCol="地面居住面积"  value="-1.87188868937813" />
+			<PCovCell  pRow="木质甲板面积"  pCol="地面以上卧室数量"  value="117.032444628019" />
+			<PCovCell  pRow="木质甲板面积"  pCol="地面以上厨房数量"  value="1346.12833698833" />
+			<PCovCell  pRow="木质甲板面积"  pCol="地面以上房间总数"  value="-64.9384559276787" />
+			<PCovCell  pRow="木质甲板面积"  pCol="壁炉数量"  value="-401.636095043398" />
+			<PCovCell  pRow="木质甲板面积"  pCol="车库容纳车辆数量"  value="-319.77933233412" />
+			<PCovCell  pRow="木质甲板面积"  pCol="木质甲板面积"  value="52.4261558894077" />
+			<PCovCell  pRow="木质甲板面积"  pCol="(Constant)"  value="3799.85043897039" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="房屋分类_5"  value="-1934.77902602367" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="区域分类_2"  value="-328.144849112927" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="区域分类_4"  value="223.165869815988" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="区域分类_5"  value="-1552.13508541336" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="地块配置_2"  value="-144.111509498579" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="建筑类型_4"  value="2174.00937752294" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="建筑类型_5"  value="-1129.97176149513" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="房屋风格_4"  value="-7302.66911823873" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="房屋风格_5"  value="-652.453794711599" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="房屋风格_6"  value="243.300374291402" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="房屋风格_7"  value="1498.16443923891" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="屋顶样式_4"  value="-1607.14678827834" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="屋顶材料_2"  value="6890.06796311969" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="供暖系统_3"  value="-4684.53916213037" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="功能性_2"  value="3966.08262645472" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="销售类型_7"  value="1990.01239782521" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="销售条件_3"  value="4961.0689725294" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="销售条件_5"  value="1269.63618663327" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="环境条件_1_3"  value="4946.0220542339" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="环境条件_1_5"  value="1873.08015525595" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="环境条件_1_12"  value="7671.10059988648" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="环境条件_1_16"  value="-273.448556187673" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="外墙材料_1_7"  value="-3861.57588756717" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="外墙材料_1_8"  value="7748.39238092218" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="外墙材料_1_12"  value="-10182.9095000979" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="外墙材料_1_15"  value="-2127.39233144902" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="外墙材料_1_17"  value="-51065.5956834662" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="外墙材料_1_35"  value="-1883.11665327789" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="外墙材料_1_49"  value="1899.03137612451" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="外墙材料_1_55"  value="6932.21141503001" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="地下室装修类型_1_4"  value="-4916.85292381866" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="地下室装修类型_1_12"  value="-3713.89556652298" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="地下室装修类型_1_16"  value="864.398898375221" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="地下室装修类型_1_17"  value="4200.07948339978" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="地下室装修类型_1_27"  value="2516.88713466925" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="外部质量_N"  value="374.232978142161" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="地下室质量_N"  value="-504.902395994591" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="地下室采光_N"  value="-128.642110526004" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="中央空调_N"  value="-1291.23920953211" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="厨房质量_N"  value="-122.030192899145" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="车库装修情况_N"  value="1.47601279354346" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="占地面积"  value="0.0714029160056407" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="总体质量"  value="-52.5695232493742" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="总体状况"  value="-582.432063474294" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="地下室装修面积1"  value="-0.483036962290632" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="地面居住面积"  value="-1.13435336335112" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="地面以上卧室数量"  value="-486.410962128622" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="地面以上厨房数量"  value="811.619718588798" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="地面以上房间总数"  value="372.375797686024" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="壁炉数量"  value="-3009.53998545416" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="车库容纳车辆数量"  value="-747.553219401553" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="木质甲板面积"  value="15.6442291610693" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="遮屏门廊面积"  value="239.473815081363" />
+			<PCovCell  pRow="遮屏门廊面积"  pCol="(Constant)"  value="-2660.20000760476" />
+		</PCovMatrix>
+		<ParamMatrix >
+			<PCell  parameterName="(Constant)"  beta="-144349.75617046" />
+			<PCell  parameterName="房屋分类_5"  beta="-10094.9394048816" />
+			<PCell  parameterName="区域分类_2"  beta="-8308.51912424215" />
+			<PCell  parameterName="区域分类_4"  beta="16456.061755577" />
+			<PCell  parameterName="区域分类_5"  beta="7927.37764862019" />
+			<PCell  parameterName="地块配置_2"  beta="9840.71986013314" />
+			<PCell  parameterName="建筑类型_4"  beta="-16569.8842866452" />
+			<PCell  parameterName="建筑类型_5"  beta="-18803.8922555957" />
+			<PCell  parameterName="房屋风格_4"  beta="-27429.4731967995" />
+			<PCell  parameterName="房屋风格_5"  beta="-26959.637904422" />
+			<PCell  parameterName="房屋风格_6"  beta="-11526.9097308831" />
+			<PCell  parameterName="房屋风格_7"  beta="-8414.65978090422" />
+			<PCell  parameterName="屋顶样式_4"  beta="6466.03423690361" />
+			<PCell  parameterName="屋顶材料_2"  beta="13030.0544737627" />
+			<PCell  parameterName="供暖系统_3"  beta="-3020.6079625463" />
+			<PCell  parameterName="功能性_2"  beta="-21128.4466658947" />
+			<PCell  parameterName="销售类型_7"  beta="30360.4813851399" />
+			<PCell  parameterName="销售条件_3"  beta="9214.86569089065" />
+			<PCell  parameterName="销售条件_5"  beta="7030.02343796014" />
+			<PCell  parameterName="环境条件_1_3"  beta="24452.1145394894" />
+			<PCell  parameterName="环境条件_1_5"  beta="-12712.2267106737" />
+			<PCell  parameterName="环境条件_1_12"  beta="-194727.615076263" />
+			<PCell  parameterName="环境条件_1_16"  beta="-28059.4130976641" />
+			<PCell  parameterName="外墙材料_1_7"  beta="14062.1410120279" />
+			<PCell  parameterName="外墙材料_1_8"  beta="23898.3663778772" />
+			<PCell  parameterName="外墙材料_1_12"  beta="22892.9585484292" />
+			<PCell  parameterName="外墙材料_1_15"  beta="16697.6577370217" />
+			<PCell  parameterName="外墙材料_1_17"  beta="122942.394865304" />
+			<PCell  parameterName="外墙材料_1_35"  beta="-1387.81198803899" />
+			<PCell  parameterName="外墙材料_1_49"  beta="2302.36416206047" />
+			<PCell  parameterName="外墙材料_1_55"  beta="108840.768583213" />
+			<PCell  parameterName="地下室装修类型_1_4"  beta="6358.06836375304" />
+			<PCell  parameterName="地下室装修类型_1_12"  beta="37876.0398222948" />
+			<PCell  parameterName="地下室装修类型_1_16"  beta="9631.71412257314" />
+			<PCell  parameterName="地下室装修类型_1_17"  beta="-15312.9770693239" />
+			<PCell  parameterName="地下室装修类型_1_27"  beta="-5840.20951295343" />
+			<PCell  parameterName="外部质量_N"  beta="6011.80072581584" />
+			<PCell  parameterName="地下室质量_N"  beta="6409.09755921" />
+			<PCell  parameterName="地下室采光_N"  beta="1987.38357504691" />
+			<PCell  parameterName="中央空调_N"  beta="720.67236606213" />
+			<PCell  parameterName="厨房质量_N"  beta="4024.32154176894" />
+			<PCell  parameterName="车库装修情况_N"  beta="-429.969134480319" />
+			<PCell  parameterName="占地面积"  beta="0.307978780475651" />
+			<PCell  parameterName="总体质量"  beta="12985.0941622529" />
+			<PCell  parameterName="总体状况"  beta="3832.71687493875" />
+			<PCell  parameterName="地下室装修面积1"  beta="11.993465531881" />
+			<PCell  parameterName="地面居住面积"  beta="52.0589329723454" />
+			<PCell  parameterName="地面以上卧室数量"  beta="-6192.3159191206" />
+			<PCell  parameterName="地面以上厨房数量"  beta="-17639.3023755068" />
+			<PCell  parameterName="地面以上房间总数"  beta="3016.08495409123" />
+			<PCell  parameterName="壁炉数量"  beta="3625.165524036" />
+			<PCell  parameterName="车库容纳车辆数量"  beta="11052.2287554308" />
+			<PCell  parameterName="木质甲板面积"  beta="23.4053075678662" />
+			<PCell  parameterName="遮屏门廊面积"  beta="36.1821295829828" />
+		</ParamMatrix>
+	</GeneralRegressionModel>
+</PMML>

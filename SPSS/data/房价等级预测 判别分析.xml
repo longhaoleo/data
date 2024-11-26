@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<spss-ml 
+	 version="1.0"
+	 xmlns="http://xml.spss.com/spss/spss-ml"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://xml.spss.com/spss/spss-ml spss-ml-1.0.xsd">
+	<dictionary 
+		 version="1.0">
+		<variable 
+			 name="SalePrice_Group"
+			 label="房屋售价等级"
+			 measurement-level="NOMINAL"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="8"  decimals="2" />
+		</variable>
+		<variable 
+			 name="房屋分类"
+			 measurement-level="NOMINAL"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="3"  decimals="0" />
+			<var-stats  mean="56.8972587585449" />
+		</variable>
+		<variable 
+			 name="占地面积"
+			 measurement-level="CONTINUOUS"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="6"  decimals="0" />
+			<var-stats  mean="10516.828125" />
+		</variable>
+		<variable 
+			 name="总体质量"
+			 measurement-level="NOMINAL"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="2"  decimals="0" />
+			<var-stats  mean="6.09931516647339" />
+		</variable>
+		<variable 
+			 name="总体状况"
+			 measurement-level="NOMINAL"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="1"  decimals="0" />
+			<var-stats  mean="5.57534265518188" />
+		</variable>
+		<variable 
+			 name="建造年份"
+			 measurement-level="CONTINUOUS"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="4"  decimals="0" />
+			<var-stats  mean="1971.26782226563" />
+		</variable>
+		<variable 
+			 name="翻新年份"
+			 measurement-level="CONTINUOUS"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="4"  decimals="0" />
+			<var-stats  mean="1984.86572265625" />
+		</variable>
+		<variable 
+			 name="地下室装修面积1"
+			 measurement-level="CONTINUOUS"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="4"  decimals="0" />
+			<var-stats  mean="443.639739990234" />
+		</variable>
+		<variable 
+			 name="地下室总面积"
+			 measurement-level="CONTINUOUS"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="4"  decimals="0" />
+			<var-stats  mean="1057.42944335938" />
+		</variable>
+		<variable 
+			 name="地面居住面积"
+			 measurement-level="CONTINUOUS"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="4"  decimals="0" />
+			<var-stats  mean="1515.46374511719" />
+		</variable>
+		<variable 
+			 name="地下室全浴室数量"
+			 measurement-level="NOMINAL"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="1"  decimals="0" />
+			<var-stats  mean="0.425342470407486" />
+		</variable>
+		<variable 
+			 name="全浴室数量"
+			 measurement-level="NOMINAL"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="1"  decimals="0" />
+			<var-stats  mean="1.56506848335266" />
+		</variable>
+		<variable 
+			 name="半浴室数量"
+			 measurement-level="NOMINAL"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="1"  decimals="0" />
+			<var-stats  mean="0.382876724004745" />
+		</variable>
+		<variable 
+			 name="地面以上卧室数量"
+			 measurement-level="NOMINAL"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="1"  decimals="0" />
+			<var-stats  mean="2.86643838882446" />
+		</variable>
+		<variable 
+			 name="地面以上房间总数"
+			 measurement-level="NOMINAL"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="2"  decimals="0" />
+			<var-stats  mean="6.51780843734741" />
+		</variable>
+		<variable 
+			 name="壁炉数量"
+			 measurement-level="NOMINAL"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="1"  decimals="0" />
+			<var-stats  mean="0.613013684749603" />
+		</variable>
+		<variable 
+			 name="车库建造年份"
+			 measurement-level="CONTINUOUS"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="6"  decimals="1" />
+			<var-stats  mean="1978.56237792969" />
+		</variable>
+		<variable 
+			 name="车库容纳车辆数量"
+			 measurement-level="NOMINAL"
+			 storage-type="NUMERIC">
+			<format-spec  format="5"  width="1"  decimals="0" />
+			<var-stats  mean="1.76712334156036" />
+		</variable>
+	</dictionary>
+	<model 
+		 unique-id=""
+		 verbose-model-specification="">
+		<discriminant-model 
+			 target-variable-name="SalePrice_Group"
+			 number-functions="3">
+			<function-coefficients >
+				<cell  row="房屋分类"  column="1"  value="-0.00547816957176772" />
+				<cell  row="房屋分类"  column="2"  value="0.0070610882488087" />
+				<cell  row="房屋分类"  column="3"  value="0.00683515673658716" />
+				<cell  row="占地面积"  column="1"  value="1.17821301947494E-05" />
+				<cell  row="占地面积"  column="2"  value="-1.18119180355524E-05" />
+				<cell  row="占地面积"  column="3"  value="-4.23714294839191E-06" />
+				<cell  row="总体质量"  column="1"  value="0.453152714767703" />
+				<cell  row="总体质量"  column="2"  value="-0.40943179600799" />
+				<cell  row="总体质量"  column="3"  value="0.27283567671273" />
+				<cell  row="总体状况"  column="1"  value="0.182239626955495" />
+				<cell  row="总体状况"  column="2"  value="0.508782132213816" />
+				<cell  row="总体状况"  column="3"  value="0.143306709566802" />
+				<cell  row="建造年份"  column="1"  value="0.0155556053480592" />
+				<cell  row="建造年份"  column="2"  value="0.0252760804970386" />
+				<cell  row="建造年份"  column="3"  value="-0.00839116502233576" />
+				<cell  row="翻新年份"  column="1"  value="0.00949385962156495" />
+				<cell  row="翻新年份"  column="2"  value="0.00725050583623893" />
+				<cell  row="翻新年份"  column="3"  value="-0.00701025384003995" />
+				<cell  row="地下室装修面积1"  column="1"  value="-1.60251961794241E-05" />
+				<cell  row="地下室装修面积1"  column="2"  value="5.28455138582745E-05" />
+				<cell  row="地下室装修面积1"  column="3"  value="0.00139190300962614" />
+				<cell  row="地下室总面积"  column="1"  value="0.000346008340038606" />
+				<cell  row="地下室总面积"  column="2"  value="0.000849296188459613" />
+				<cell  row="地下室总面积"  column="3"  value="0.000266738131368419" />
+				<cell  row="地面居住面积"  column="1"  value="0.00116326985716382" />
+				<cell  row="地面居住面积"  column="2"  value="-0.00147445648348224" />
+				<cell  row="地面居住面积"  column="3"  value="-0.000464310313928387" />
+				<cell  row="地下室全浴室数量"  column="1"  value="0.486827980433851" />
+				<cell  row="地下室全浴室数量"  column="2"  value="0.0784396470717825" />
+				<cell  row="地下室全浴室数量"  column="3"  value="-0.349811861805759" />
+				<cell  row="全浴室数量"  column="1"  value="0.228511947281682" />
+				<cell  row="全浴室数量"  column="2"  value="0.221262627934873" />
+				<cell  row="全浴室数量"  column="3"  value="-1.7439174599246" />
+				<cell  row="半浴室数量"  column="1"  value="0.0797587607092505" />
+				<cell  row="半浴室数量"  column="2"  value="0.700407055723764" />
+				<cell  row="半浴室数量"  column="3"  value="-0.574233533001384" />
+				<cell  row="地面以上卧室数量"  column="1"  value="-0.037029766676616" />
+				<cell  row="地面以上卧室数量"  column="2"  value="1.06151829726574" />
+				<cell  row="地面以上卧室数量"  column="3"  value="0.209286255223001" />
+				<cell  row="地面以上房间总数"  column="1"  value="0.0387307698314108" />
+				<cell  row="地面以上房间总数"  column="2"  value="-0.189197583802201" />
+				<cell  row="地面以上房间总数"  column="3"  value="0.278556399637339" />
+				<cell  row="壁炉数量"  column="1"  value="0.285304537745924" />
+				<cell  row="壁炉数量"  column="2"  value="0.343807281113673" />
+				<cell  row="壁炉数量"  column="3"  value="0.042041455853386" />
+				<cell  row="车库建造年份"  column="1"  value="0.0013840727737702" />
+				<cell  row="车库建造年份"  column="2"  value="-0.0167604865015569" />
+				<cell  row="车库建造年份"  column="3"  value="0.00254202718849388" />
+				<cell  row="车库容纳车辆数量"  column="1"  value="0.360263932417536" />
+				<cell  row="车库容纳车辆数量"  column="2"  value="0.430708293019974" />
+				<cell  row="车库容纳车辆数量"  column="3"  value="0.49164032944396" />
+				<cell  column="1"  value="-59.513691483191" />
+				<cell  column="2"  value="-33.7888018486147" />
+				<cell  column="3"  value="22.2106934463162" />
+			</function-coefficients>
+			<fgc-matrix >
+				<cell  row="1"  column="1"  value="-2.58453958486726" />
+				<cell  row="1"  column="2"  value="-0.647441736981307" />
+				<cell  row="1"  column="3"  value="-0.0783434464716065" />
+				<cell  row="2"  column="1"  value="-0.693926815565942" />
+				<cell  row="2"  column="2"  value="0.384164202944767" />
+				<cell  row="2"  column="3"  value="0.186451537887884" />
+				<cell  row="3"  column="1"  value="1.28441026022123" />
+				<cell  row="3"  column="2"  value="0.111709723102358" />
+				<cell  row="3"  column="3"  value="-0.506858345879326" />
+				<cell  row="4"  column="1"  value="3.15503641194643" />
+				<cell  row="4"  column="2"  value="-0.486047935091648" />
+				<cell  row="4"  column="3"  value="0.368889948687956" />
+			</fgc-matrix>
+			<prior-vector >
+				<prior-value  target-category="1"  value="0.25" />
+				<prior-value  target-category="2"  value="0.25" />
+				<prior-value  target-category="3"  value="0.25" />
+				<prior-value  target-category="4"  value="0.25" />
+			</prior-vector>
+		</discriminant-model>
+	</model>
+</spss-ml>

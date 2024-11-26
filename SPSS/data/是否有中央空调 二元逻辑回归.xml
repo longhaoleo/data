@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<PMML 
+	 version="4.3"
+	 xmlns="http://www.dmg.org/PMML-4_3"
+	 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	 xsi:schemaLocation="http://www.dmg.org/PMML-4_3 pmml-4-3.xsd">
+	<Header 
+		 copyright="Copyright (c) IBM Corp. 1989, 2017.">
+		<Application  name="IBM SPSS Statistics"  version="27.0.1.0" />
+	</Header>
+	<DataDictionary 
+		 numberOfFields="4">
+		<DataField 
+			 name="中央空调"
+			 optype="categorical"
+			 dataType="string">
+			<Extension  extender="spss.com"  name="format"  value="1" />
+			<Extension  extender="spss.com"  name="width"  value="1" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="N"  displayValue="N"  property="valid" />
+			<Value  value="Y"  displayValue="Y"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="供暖质量"
+			 optype="categorical"
+			 dataType="string">
+			<Extension  extender="spss.com"  name="format"  value="1" />
+			<Extension  extender="spss.com"  name="width"  value="2" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="Ex"  displayValue="Ex"  property="valid" />
+			<Value  value="Fa"  displayValue="Fa"  property="valid" />
+			<Value  value="Gd"  displayValue="Gd"  property="valid" />
+			<Value  value="Po"  displayValue="Po"  property="valid" />
+			<Value  value="TA"  displayValue="TA"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="房屋风格"
+			 optype="categorical"
+			 dataType="string">
+			<Extension  extender="spss.com"  name="format"  value="1" />
+			<Extension  extender="spss.com"  name="width"  value="6" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+			<Value  value="1.5Fin"  displayValue="1.5Fin"  property="valid" />
+			<Value  value="1.5Unf"  displayValue="1.5Unf"  property="valid" />
+			<Value  value="1Story"  displayValue="1Story"  property="valid" />
+			<Value  value="2.5Fin"  displayValue="2.5Fin"  property="valid" />
+			<Value  value="2.5Unf"  displayValue="2.5Unf"  property="valid" />
+			<Value  value="2Story"  displayValue="2Story"  property="valid" />
+			<Value  value="SFoyer"  displayValue="SFoyer"  property="valid" />
+			<Value  value="SLvl"  displayValue="SLvl"  property="valid" />
+		</DataField>
+		<DataField 
+			 name="建造年份"
+			 optype="continuous"
+			 dataType="double">
+			<Extension  extender="spss.com"  name="format"  value="5" />
+			<Extension  extender="spss.com"  name="width"  value="4" />
+			<Extension  extender="spss.com"  name="decimals"  value="0" />
+		</DataField>
+	</DataDictionary>
+	<GeneralRegressionModel 
+		 targetVariableName="中央空调"
+		 targetReferenceCategory="Y"
+		 modelType="multinomialLogistic"
+		 algorithmName="x-contrastLogistic"
+		 functionName="classification">
+		<Extension  extender="spss.com"  name="numberParameters"  value="13" />
+		<Extension  extender="spss.com"  name="cutoff"  value="0.5" />
+		<MiningSchema >
+			<MiningField  name="中央空调"  usageType="predicted"  missingValueTreatment="asIs" />
+			<MiningField  name="建造年份"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="供暖质量"  usageType="active"  missingValueTreatment="asIs" />
+			<MiningField  name="房屋风格"  usageType="active"  missingValueTreatment="asIs" />
+		</MiningSchema>
+		<ParameterList >
+			<Parameter  name="P0000001"  label="Constant" />
+			<Parameter  name="P0000002"  label="建造年份" />
+			<Parameter  name="P0000003"  label="供暖质量(1)" />
+			<Parameter  name="P0000004"  label="供暖质量(2)" />
+			<Parameter  name="P0000005"  label="供暖质量(3)" />
+			<Parameter  name="P0000006"  label="供暖质量(4)" />
+			<Parameter  name="P0000007"  label="房屋风格(1)" />
+			<Parameter  name="P0000008"  label="房屋风格(2)" />
+			<Parameter  name="P0000009"  label="房屋风格(3)" />
+			<Parameter  name="P0000010"  label="房屋风格(4)" />
+			<Parameter  name="P0000011"  label="房屋风格(5)" />
+			<Parameter  name="P0000012"  label="房屋风格(6)" />
+			<Parameter  name="P0000013"  label="房屋风格(7)" />
+		</ParameterList>
+		<FactorList >
+			<Predictor 
+				 name="供暖质量">
+				<Extension 
+					 extender="spss.com"
+					 name="contrastMatrix"
+					 value="Indicator">
+					<X-Basis 
+						 nRow="5"
+						 nCol="4">
+						<X-BasisRow 
+							 value="Ex"> 1 0 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="Fa"> 0 1 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="Gd"> 0 0 1 0</X-BasisRow>
+						<X-BasisRow 
+							 value="Po"> 0 0 0 1</X-BasisRow>
+						<X-BasisRow 
+							 value="TA"> 0 0 0 0</X-BasisRow>
+					</X-Basis>
+				</Extension>
+			</Predictor>
+			<Predictor 
+				 name="房屋风格">
+				<Extension 
+					 extender="spss.com"
+					 name="contrastMatrix"
+					 value="Indicator">
+					<X-Basis 
+						 nRow="8"
+						 nCol="7">
+						<X-BasisRow 
+							 value="1.5Fin"> 1 0 0 0 0 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="1.5Unf"> 0 1 0 0 0 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="1Story"> 0 0 1 0 0 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="2.5Fin"> 0 0 0 1 0 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="2.5Unf"> 0 0 0 0 1 0 0</X-BasisRow>
+						<X-BasisRow 
+							 value="2Story"> 0 0 0 0 0 1 0</X-BasisRow>
+						<X-BasisRow 
+							 value="SFoyer"> 0 0 0 0 0 0 1</X-BasisRow>
+						<X-BasisRow 
+							 value="SLvl"> 0 0 0 0 0 0 0</X-BasisRow>
+					</X-Basis>
+				</Extension>
+			</Predictor>
+		</FactorList>
+		<CovariateList >
+			<Predictor  name="建造年份" />
+		</CovariateList>
+		<PPMatrix >
+			<PPCell  value="1"  predictorName="建造年份"  parameterName="P0000002" />
+			<PPCell  value="Ex"  predictorName="供暖质量"  parameterName="P0000003" />
+			<PPCell  value="Fa"  predictorName="供暖质量"  parameterName="P0000004" />
+			<PPCell  value="Gd"  predictorName="供暖质量"  parameterName="P0000005" />
+			<PPCell  value="Po"  predictorName="供暖质量"  parameterName="P0000006" />
+			<PPCell  value="1.5Fin"  predictorName="房屋风格"  parameterName="P0000007" />
+			<PPCell  value="1.5Unf"  predictorName="房屋风格"  parameterName="P0000008" />
+			<PPCell  value="1Story"  predictorName="房屋风格"  parameterName="P0000009" />
+			<PPCell  value="2.5Fin"  predictorName="房屋风格"  parameterName="P0000010" />
+			<PPCell  value="2.5Unf"  predictorName="房屋风格"  parameterName="P0000011" />
+			<PPCell  value="2Story"  predictorName="房屋风格"  parameterName="P0000012" />
+			<PPCell  value="SFoyer"  predictorName="房屋风格"  parameterName="P0000013" />
+		</PPMatrix>
+		<PCovMatrix >
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000001"  pCol="P0000001"  value="21546006.5674921" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000002"  pCol="P0000001"  value="-0.0914147022731413" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000002"  pCol="P0000002"  value="4.64707009234294E-05" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000003"  pCol="P0000001"  value="-0.637210597317949" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000003"  pCol="P0000002"  value="0.000314543376922802" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000003"  pCol="P0000003"  value="0.184444543347653" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000004"  pCol="P0000001"  value="0.299667250445054" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000004"  pCol="P0000002"  value="-0.000165783823979661" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000004"  pCol="P0000003"  value="0.0322245202445299" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000004"  pCol="P0000004"  value="0.14746762075005" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000005"  pCol="P0000001"  value="-1.30295524340257" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000005"  pCol="P0000002"  value="0.0006521987427086" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000005"  pCol="P0000003"  value="0.0394911513360335" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000005"  pCol="P0000004"  value="0.0292589256855324" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000005"  pCol="P0000005"  value="0.150680076062928" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000006"  pCol="P0000001"  value="0.940723766238079" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000006"  pCol="P0000002"  value="-0.000484620684589727" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000006"  pCol="P0000003"  value="0.0387698874059906" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000006"  pCol="P0000004"  value="0.0467098380803466" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000006"  pCol="P0000005"  value="0.0315220929432038" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000006"  pCol="P0000006"  value="1615474845.62702" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000007"  pCol="P0000001"  value="-21545830.3053722" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000007"  pCol="P0000002"  value="0.00181660933003513" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000007"  pCol="P0000003"  value="-0.000231218300597978" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000007"  pCol="P0000004"  value="-0.00796468531916616" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000007"  pCol="P0000005"  value="0.00687247692222062" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000007"  pCol="P0000006"  value="-0.0245788861066103" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000007"  pCol="P0000007"  value="21545826.8891734" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000008"  pCol="P0000001"  value="-21545830.0722787" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000008"  pCol="P0000002"  value="0.00169969246644541" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000008"  pCol="P0000003"  value="-0.0120879846952006" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000008"  pCol="P0000004"  value="-0.0245906861808798" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000008"  pCol="P0000005"  value="0.00551539086187353" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000008"  pCol="P0000006"  value="-0.775917664023003" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000008"  pCol="P0000007"  value="21545826.8039123" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000008"  pCol="P0000008"  value="21545827.5490933" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000009"  pCol="P0000001"  value="-21545828.3706457" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000009"  pCol="P0000002"  value="0.000832649523545115" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000009"  pCol="P0000003"  value="-0.00422196003116396" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000009"  pCol="P0000004"  value="-0.00816077677792827" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000009"  pCol="P0000005"  value="0.00642431273606378" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000009"  pCol="P0000006"  value="-0.012353345233893" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000009"  pCol="P0000007"  value="21545826.7680695" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000009"  pCol="P0000008"  value="21545826.7668263" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000009"  pCol="P0000009"  value="21545826.7853362" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000010"  pCol="P0000001"  value="-21545832.1006739" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000010"  pCol="P0000002"  value="0.0027330814027664" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000010"  pCol="P0000003"  value="-0.0562857332491694" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000010"  pCol="P0000004"  value="-0.0466469179974787" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000010"  pCol="P0000005"  value="0.0321253707877607" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000010"  pCol="P0000006"  value="-0.0496746184093349" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000010"  pCol="P0000007"  value="21545826.8448161" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000010"  pCol="P0000008"  value="21545826.8454375" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000010"  pCol="P0000009"  value="21545826.7878278" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000010"  pCol="P0000010"  value="21545828.2875812" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000011"  pCol="P0000001"  value="-21545830.951833" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000011"  pCol="P0000002"  value="0.00214817040387061" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000011"  pCol="P0000003"  value="-0.0544403033077734" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000011"  pCol="P0000004"  value="-0.0123364703832984" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000011"  pCol="P0000005"  value="-0.0110074513009542" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000011"  pCol="P0000006"  value="-0.0415089882238388" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000011"  pCol="P0000007"  value="21545826.8269555" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000011"  pCol="P0000008"  value="21545826.8237433" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000011"  pCol="P0000009"  value="21545826.7771653" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000011"  pCol="P0000010"  value="21545826.8850728" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000011"  pCol="P0000011"  value="21545827.4505595" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000012"  pCol="P0000001"  value="-21545830.3920828" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000012"  pCol="P0000002"  value="0.00186137618129578" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000012"  pCol="P0000003"  value="-0.00515241517595415" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000012"  pCol="P0000004"  value="-0.0143204062320082" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000012"  pCol="P0000005"  value="0.00593547346831292" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000012"  pCol="P0000006"  value="-0.0275706420517029" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000012"  pCol="P0000007"  value="21545826.8104803" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000012"  pCol="P0000008"  value="21545826.8067222" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000012"  pCol="P0000009"  value="21545826.7692722" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000012"  pCol="P0000010"  value="21545826.8504918" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000012"  pCol="P0000011"  value="21545826.8306211" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000012"  pCol="P0000012"  value="21545826.8947836" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000013"  pCol="P0000001"  value="-21545826.230873" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000013"  pCol="P0000002"  value="-0.000258143971677782" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000013"  pCol="P0000003"  value="0.00489216026435574" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000013"  pCol="P0000004"  value="0.0229870783732622" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000013"  pCol="P0000005"  value="0.00216723160716302" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000013"  pCol="P0000006"  value="0.00988867435080465" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000013"  pCol="P0000007"  value="21545826.7239892" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000013"  pCol="P0000008"  value="21545826.7220418" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000013"  pCol="P0000009"  value="21545826.7290129" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000013"  pCol="P0000010"  value="21545826.713245" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000013"  pCol="P0000011"  value="21545826.7210706" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000013"  pCol="P0000012"  value="21545826.7227764" />
+			<PCovCell  tRow="Y"  tCol="Y"  pRow="P0000013"  pCol="P0000013"  value="60670405.5581778" />
+		</PCovMatrix>
+		<ParamMatrix >
+			<PCell  targetCategory="Y"  parameterName="P0000001"  beta="-102.819356093369"  df="1" />
+			<PCell  targetCategory="Y"  parameterName="P0000002"  beta="0.0626646783299158"  df="1" />
+			<PCell  targetCategory="Y"  parameterName="P0000003"  beta="2.05425233658649"  df="1" />
+			<PCell  targetCategory="Y"  parameterName="P0000004"  beta="-1.63933897075572"  df="1" />
+			<PCell  targetCategory="Y"  parameterName="P0000005"  beta="1.4865015819857"  df="1" />
+			<PCell  targetCategory="Y"  parameterName="P0000006"  beta="-22.6589648445979"  df="1" />
+			<PCell  targetCategory="Y"  parameterName="P0000007"  beta="-16.6424493046507"  df="1" />
+			<PCell  targetCategory="Y"  parameterName="P0000008"  beta="-17.3567144711465"  df="1" />
+			<PCell  targetCategory="Y"  parameterName="P0000009"  beta="-17.545228480312"  df="1" />
+			<PCell  targetCategory="Y"  parameterName="P0000010"  beta="-15.6306257212292"  df="1" />
+			<PCell  targetCategory="Y"  parameterName="P0000011"  beta="-18.6290388905566"  df="1" />
+			<PCell  targetCategory="Y"  parameterName="P0000012"  beta="-16.8709197953019"  df="1" />
+			<PCell  targetCategory="Y"  parameterName="P0000013"  beta="-0.278034355424833"  df="1" />
+		</ParamMatrix>
+	</GeneralRegressionModel>
+</PMML>
